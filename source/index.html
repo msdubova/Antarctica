@@ -15,117 +15,130 @@
 </head>
 
 <body class="page__body">
-  <header class="header">
-    <div class="header__top">
-      <a class="header__logo">
-        <picture>
-          <source media="(max-width:767px)" width="42" height="22" srcset="img/svg/logo-antarctica.svg">
-          <source media="(max-width: 1365px)" width="38" height="20" srcset="img/svg/logo-antarctica.svg">
-          <img width="70" height="38" src="img/svg/logo-antarctica.svg"
-            alt="Логотип сервиса по продаже круизов в Антарктику">
-        </picture>
-      </a>
-      <button class="header__toggle">
-        <span class="visually-hidden">
-          Открыть меню навигации
-        </span>
-      </button>
-      <nav class="header__nav">
-        <ul>
-          <li class="header_nav__item">
-            <a href="#advantages" class="header_nav__link">
-              Преимущества
-            </a>
-          </li>
-          <li class="header_nav__item">
-            <a href="#" class="header_nav__link">
-              Направления
-            </a>
-          </li>
-          <li class="header_nav__item">
-            <a href="#cruizes" class="header_nav__link">
-              Ближайшие круизы
-            </a>
-          </li>
-          <li class="header_nav__item">
-            <a href="#contacts" class="header_nav__link">
-              Контакты
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header__promo">
-      <h1 class="header__title section__title1">
-        Круизы в Антарктику
-      </h1>
-      <p class="header__description">
-        Волшебный мир айсбергов и пингвинов
-      </p>
-    </div>
+  <header class="header section">
+    <div class="container header__container">
+      <div class="header__top">
+        <a class="header__logo">
+          <picture>
+            <source media="(max-width:767px)" width="42" height="22" srcset="img/svg/logo-antarctica.svg">
+            <source media="(max-width: 1023px)" width="38" height="20" srcset="img/svg/logo-antarctica.svg">
+            <img width="70" height="38" src="img/svg/logo-antarctica.svg"
+              alt="Логотип сервиса по продаже круизов в Антарктику">
+          </picture>
+        </a>
+        <button class="header__toggle header__toggle--open">
+          <span class="visually-hidden">
+            Открыть меню навигации
+          </span>
+        </button>
+        <nav class="header__nav header__nav--closed">
+          <ul>
+            <li class="header_nav__item">
+              <a href="#advantages" class="header_nav__link">
+                Преимущества
+              </a>
+            </li>
+            <li class="header_nav__item">
+              <a href="#" class="header_nav__link">
+                Направления
+              </a>
+            </li>
+            <li class="header_nav__item">
+              <a href="#cruizes" class="header_nav__link">
+                Ближайшие круизы
+              </a>
+            </li>
+            <li class="header_nav__item">
+              <a href="#contacts" class="header_nav__link">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__promo">
+        <h1 class="header__title section__title1">
+          Круизы в Антарктику
+        </h1>
+        <p class="header__description">
+          Волшебный мир айсбергов и пингвинов
+        </p>
+      </div>
 
+
+    </div>
   </header>
   <main>
     <section class="promo section">
-      <div class="promo__info">
-        <h2 class="promo__title section__title2">
-          Путешествие на край Земли
-        </h2>
-        <p class="promo__text">
-          Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный
-          лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов,
-          морских котиков и многое другое.
-        </p>
-      </div>
-      <div class="promo__image">
-        <picture>
-          <source type="image/webp" media="(max-width: 767px)" srcset="img/promo-inline-mobile@2x.webp 2x, img/promo-inline-mobile@1x.wepb">
-          <source type="image/webp" media="(max-width: 1365px)" srcset="img/promo-inline-tablet@2x.webp 2x,
+      <div class="promo__container container">
+        <div class="promo__info">
+          <h2 class="promo__title section__title2">
+            Путешествие на край Земли
+          </h2>
+          <p class="promo__text">
+            Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный
+            лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов,
+            китов,
+            морских котиков и многое другое.
+          </p>
+        </div>
+        <div class="promo__image">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/promo-inline-mobile@2x.webp 2x, img/promo-inline-mobile@1x.wepb">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/promo-inline-tablet@2x.webp 2x,
                     img/promo-inline-tablet@1x.webp 1x">
-          <source type="image/webp" srcset="img/promo-inline-desktop@2x.webp 2x,
+            <source type="image/webp" srcset="img/promo-inline-desktop@2x.webp 2x,
                     img/promo-inline-desktop@1x.webp 1x">
-          <source media="(max-width: 767px)" srcset="img/promo-inline-mobile@2x.png 2x, img/promo-inline-mobile@1x.png">
-          <source media="(max-width: 1365px)" srcset="img/promo-inline-tablet@2x.png 2x, img/promo-inline-tablet@1x.png 1x">
-          <img src="img/promo-inline-desktop@2x.png 2x, img/promo-inline-desktop@1x.png 1x" alt="Изображение пингвинов">
-        </picture>
+            <source media="(max-width: 767px)"
+              srcset="img/promo-inline-mobile@2x.png 2x, img/promo-inline-mobile@1x.png">
+            <source media="(max-width: 1023px)"
+              srcset="img/promo-inline-tablet@2x.png 2x, img/promo-inline-tablet@1x.png 1x">
+            <img src="img/promo-inline-desktop@2x.png 2x, img/promo-inline-desktop@1x.png 1x"
+              alt="Изображение пингвинов">
+          </picture>
+        </div>
       </div>
     </section>
     <section class="advantages section" id="advantages">
-      <h2 class="advantages__title section__title2">
-        Преимущества
-      </h2>
-      <ul class="advantages__list">
-        <li class="advantages__item">
-          <h3 class="advantages_item__title section__title3">
-            Небольшой круизный лайнер
-          </h3>
-          <p class="advantages_item__description">
-            Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст возможность
-            насладиться видами и природой.
-          </p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages_item__title section__title3">
-            Система все включено
-          </h3>
-          <p class="advantages_item__description">
-            Все наши круизы работают
-            по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24 часа.
-          </p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages_item__title section__title3">
-            Экскурсионные туры на Zodiac
-          </h3>
-          <p class="advantages_item__description">
-            Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках типа Zodiac в сопровождении
-            опытных экскурсоводов.
-          </p>
-        </li>
-      </ul>
-
+      <div class="advantages__container container">
+        <h2 class="advantages__title section__title2">
+          Преимущества
+        </h2>
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item--vip">
+            <h3 class="advantages_item__title section__title3">
+              Небольшой круизный лайнер
+            </h3>
+            <p class="advantages_item__description">
+              Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст
+              возможность
+              насладиться видами и природой.
+            </p>
+          </li>
+          <li class="advantages__item advantages__item--allincluded">
+            <h3 class="advantages_item__title section__title3">
+              Система все включено
+            </h3>
+            <p class="advantages_item__description">
+              Все наши круизы работают
+              по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24 часа.
+            </p>
+          </li>
+          <li class="advantages__item advantages__item--zodiac">
+            <h3 class="advantages_item__title section__title3">
+              Экскурсионные туры на Zodiac
+            </h3>
+            <p class="advantages_item__description">
+              Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках типа Zodiac в сопровождении
+              опытных экскурсоводов.
+            </p>
+          </li>
+        </ul>
+      </div>
     </section>
-    <section class="cruizes section" id="cruizes">
+
+    <!-- <section class="cruizes section" id="cruizes">
       <h2 class="section__title2">
         Ближайшие круизы
       </h2>
@@ -133,12 +146,18 @@
 
         <li class="cruizes__item">
           <picture>
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog/cruiz-astoria-mobile@2x.webp 2x, img/catalog/cruiz-astoria-mobile@1x.wepb">
-            <source type="image/webp" media="(max-width: 1365px)" srcset="img/catalog/cruiz-astoria-tablet@2x.webp 2x, img/catalog/cruiz-astoria-tablet@1x.webp 1x">
-            <source type="image/webp" srcset="img/catalog/cruiz-astoria-desktop@2x.webp 2x, img/catalog/cruiz-astoria-desktop@1x.webp 1x">
-            <source media="(max-width: 767px)" srcset="img/catalog/cruiz-astoria-mobile@2x.png 2x, img/catalog/cruiz-astoria-mobile@1x.png">
-            <source media="(max-width: 1365px)" srcset="img/catalog/cruiz-astoria-tablet@2x.png 2x, img/catalog/cruiz-astoria-tablet@1x.png 1x">
-            <img src="img/catalog/cruiz-astoria-desktop@2x.png 2x, img/catalog/cruiz-astoria-desktop@1x.png 1x" alt="Изображение пингвинов">
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/catalog/cruiz-astoria-mobile@2x.webp 2x, img/catalog/cruiz-astoria-mobile@1x.wepb">
+            <source type="image/webp" media="(max-width: 1365px)"
+              srcset="img/catalog/cruiz-astoria-tablet@2x.webp 2x, img/catalog/cruiz-astoria-tablet@1x.webp 1x">
+            <source type="image/webp"
+              srcset="img/catalog/cruiz-astoria-desktop@2x.webp 2x, img/catalog/cruiz-astoria-desktop@1x.webp 1x">
+            <source media="(max-width: 767px)"
+              srcset="img/catalog/cruiz-astoria-mobile@2x.png 2x, img/catalog/cruiz-astoria-mobile@1x.png">
+            <source media="(max-width: 1365px)"
+              srcset="img/catalog/cruiz-astoria-tablet@2x.png 2x, img/catalog/cruiz-astoria-tablet@1x.png 1x">
+            <img src="img/catalog/cruiz-astoria-desktop@2x.png 2x, img/catalog/cruiz-astoria-desktop@1x.png 1x"
+              alt="Изображение пингвинов">
           </picture>
           <h3 class="cruizes_item__title section__title3">
             Круиз “Астория”
@@ -158,12 +177,18 @@
 
         <li class="cruizes__item">
           <picture>
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog/cruiz-astoria-mobile@2x.webp 2x, img/catalog/cruiz-astoria-mobile@1x.wepb">
-            <source type="image/webp" media="(max-width: 1365px)" srcset="img/catalog/cruiz-astoria-tablet@2x.webp 2x, img/catalog/cruiz-astoria-tablet@1x.webp 1x">
-            <source type="image/webp" srcset="img/catalog/cruiz-astoria-desktop@2x.webp 2x, img/catalog/cruiz-astoria-desktop@1x.webp 1x">
-            <source media="(max-width: 767px)" srcset="img/catalog/cruiz-astoria-mobile@2x.png 2x, img/catalog/cruiz-astoria-mobile@1x.png">
-            <source media="(max-width: 1365px)" srcset="img/catalog/cruiz-astoria-tablet@2x.png 2x, img/catalog/cruiz-astoria-tablet@1x.png 1x">
-            <img src="img/catalog/cruiz-astoria-desktop@2x.png 2x, img/catalog/cruiz-astoria-desktop@1x.png 1x" alt="Изображение пингвинов">
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/catalog/cruiz-astoria-mobile@2x.webp 2x, img/catalog/cruiz-astoria-mobile@1x.wepb">
+            <source type="image/webp" media="(max-width: 1365px)"
+              srcset="img/catalog/cruiz-astoria-tablet@2x.webp 2x, img/catalog/cruiz-astoria-tablet@1x.webp 1x">
+            <source type="image/webp"
+              srcset="img/catalog/cruiz-astoria-desktop@2x.webp 2x, img/catalog/cruiz-astoria-desktop@1x.webp 1x">
+            <source media="(max-width: 767px)"
+              srcset="img/catalog/cruiz-astoria-mobile@2x.png 2x, img/catalog/cruiz-astoria-mobile@1x.png">
+            <source media="(max-width: 1365px)"
+              srcset="img/catalog/cruiz-astoria-tablet@2x.png 2x, img/catalog/cruiz-astoria-tablet@1x.png 1x">
+            <img src="img/catalog/cruiz-astoria-desktop@2x.png 2x, img/catalog/cruiz-astoria-desktop@1x.png 1x"
+              alt="Изображение пингвинов">
           </picture>
           <h3 class="cruizes_item__title section__title3">
             Круиз “Элайн”
@@ -181,12 +206,18 @@
         </li>
         <li class="cruizes__item">
           <picture>
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog/cruiz-atlantis-mobile@2x.webp 2x, img/catalog/cruiz-atlantis-mobile@1x.wepb">
-            <source type="image/webp" media="(max-width: 1365px)" srcset="img/catalog/cruiz-atlantis-tablet@2x.webp 2x, img/catalog/cruiz-atlantis-tablet@1x.webp 1x">
-            <source type="image/webp" srcset="img/catalog/cruiz-atlantis-desktop@2x.webp 2x, img/catalog/cruiz-atlantis-desktop@1x.webp 1x">
-            <source media="(max-width: 767px)" srcset="img/catalog/cruiz-atlantis-mobile@2x.png 2x, img/catalog/cruiz-atlantis-mobile@1x.png">
-            <source media="(max-width: 1365px)" srcset="img/catalog/cruiz-atlantis-tablet@2x.png 2x, img/catalog/cruiz-atlantis-tablet@1x.png 1x">
-            <img src="img/catalog/cruiz-atlantis-desktop@2x.png 2x, img/catalog/cruiz-atlantis-desktop@1x.png 1x" alt="Изображение пингвинов">
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/catalog/cruiz-atlantis-mobile@2x.webp 2x, img/catalog/cruiz-atlantis-mobile@1x.wepb">
+            <source type="image/webp" media="(max-width: 1365px)"
+              srcset="img/catalog/cruiz-atlantis-tablet@2x.webp 2x, img/catalog/cruiz-atlantis-tablet@1x.webp 1x">
+            <source type="image/webp"
+              srcset="img/catalog/cruiz-atlantis-desktop@2x.webp 2x, img/catalog/cruiz-atlantis-desktop@1x.webp 1x">
+            <source media="(max-width: 767px)"
+              srcset="img/catalog/cruiz-atlantis-mobile@2x.png 2x, img/catalog/cruiz-atlantis-mobile@1x.png">
+            <source media="(max-width: 1365px)"
+              srcset="img/catalog/cruiz-atlantis-tablet@2x.png 2x, img/catalog/cruiz-atlantis-tablet@1x.png 1x">
+            <img src="img/catalog/cruiz-atlantis-desktop@2x.png 2x, img/catalog/cruiz-atlantis-desktop@1x.png 1x"
+              alt="Изображение пингвинов">
           </picture>
           <h3 class="cruizes_item__title section__title3">
             Круиз “Атлантис”
@@ -204,12 +235,18 @@
         </li>
         <li class="cruizes__item">
           <picture>
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog/cruiz-odissey-mobile@2x.webp 2x, img/catalog/cruiz-odissey-mobile@1x.wepb">
-            <source type="image/webp" media="(max-width: 1365px)" srcset="img/catalog/cruiz-odissey-tablet@2x.webp 2x, img/catalog/cruiz-odissey-tablet@1x.webp 1x">
-            <source type="image/webp" srcset="img/catalog/cruiz-odissey-desktop@2x.webp 2x, img/catalog/cruiz-odissey-desktop@1x.webp 1x">
-            <source media="(max-width: 767px)" srcset="img/catalog/cruiz-odissey-mobile@2x.png 2x, img/catalog/cruiz-odissey-mobile@1x.png">
-            <source media="(max-width: 1365px)" srcset="img/catalog/cruiz-odissey-tablet@2x.png 2x, img/catalog/cruiz-odissey-tablet@1x.png 1x">
-            <img src="img/catalog/cruiz-odissey-desktop@2x.png 2x, img/catalog/cruiz-odissey-desktop@1x.png 1x" alt="Изображение пингвинов">
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/catalog/cruiz-odissey-mobile@2x.webp 2x, img/catalog/cruiz-odissey-mobile@1x.wepb">
+            <source type="image/webp" media="(max-width: 1365px)"
+              srcset="img/catalog/cruiz-odissey-tablet@2x.webp 2x, img/catalog/cruiz-odissey-tablet@1x.webp 1x">
+            <source type="image/webp"
+              srcset="img/catalog/cruiz-odissey-desktop@2x.webp 2x, img/catalog/cruiz-odissey-desktop@1x.webp 1x">
+            <source media="(max-width: 767px)"
+              srcset="img/catalog/cruiz-odissey-mobile@2x.png 2x, img/catalog/cruiz-odissey-mobile@1x.png">
+            <source media="(max-width: 1365px)"
+              srcset="img/catalog/cruiz-odissey-tablet@2x.png 2x, img/catalog/cruiz-odissey-tablet@1x.png 1x">
+            <img src="img/catalog/cruiz-odissey-desktop@2x.png 2x, img/catalog/cruiz-odissey-desktop@1x.png 1x"
+              alt="Изображение пингвинов">
           </picture>
           <h3 class="cruizes_item__title section__title3">
             Круиз “Одиссей”
@@ -227,12 +264,18 @@
         </li>
         <li class="cruizes__item">
           <picture>
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog/cruiz-olimpia-mobile@2x.webp 2x, img/catalog/cruiz-olimpia-mobile@1x.wepb">
-            <source type="image/webp" media="(max-width: 1365px)" srcset="img/catalog/cruiz-olimpia-tablet@2x.webp 2x, img/catalog/cruiz-olimpia-tablet@1x.webp 1x">
-            <source type="image/webp" srcset="img/catalog/cruiz-olimpia-desktop@2x.webp 2x, img/catalog/cruiz-olimpia-desktop@1x.webp 1x">
-            <source media="(max-width: 767px)" srcset="img/catalog/cruiz-olimpia-mobile@2x.png 2x, img/catalog/cruiz-olimpia-mobile@1x.png">
-            <source media="(max-width: 1365px)" srcset="img/catalog/cruiz-olimpia-tablet@2x.png 2x, img/catalog/cruiz-olimpia-tablet@1x.png 1x">
-            <img src="img/catalog/cruiz-olimpia-desktop@2x.png 2x, img/catalog/cruiz-olimpia-desktop@1x.png 1x" alt="Изображение пингвинов">
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/catalog/cruiz-olimpia-mobile@2x.webp 2x, img/catalog/cruiz-olimpia-mobile@1x.wepb">
+            <source type="image/webp" media="(max-width: 1365px)"
+              srcset="img/catalog/cruiz-olimpia-tablet@2x.webp 2x, img/catalog/cruiz-olimpia-tablet@1x.webp 1x">
+            <source type="image/webp"
+              srcset="img/catalog/cruiz-olimpia-desktop@2x.webp 2x, img/catalog/cruiz-olimpia-desktop@1x.webp 1x">
+            <source media="(max-width: 767px)"
+              srcset="img/catalog/cruiz-olimpia-mobile@2x.png 2x, img/catalog/cruiz-olimpia-mobile@1x.png">
+            <source media="(max-width: 1365px)"
+              srcset="img/catalog/cruiz-olimpia-tablet@2x.png 2x, img/catalog/cruiz-olimpia-tablet@1x.png 1x">
+            <img src="img/catalog/cruiz-olimpia-desktop@2x.png 2x, img/catalog/cruiz-olimpia-desktop@1x.png 1x"
+              alt="Изображение пингвинов">
           </picture>
           <h3 class="cruizes_item__title section__title3">
             Круиз “Олимпия”
@@ -251,12 +294,18 @@
 
         <li class="cruizes__item">
           <picture>
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog/cruiz-avrora-mobile@2x.webp 2x, img/catalog/cruiz-avrora-mobile@1x.wepb">
-            <source type="image/webp" media="(max-width: 1365px)" srcset="img/catalog/cruiz-avrora-tablet@2x.webp 2x, img/catalog/cruiz-avrora-tablet@1x.webp 1x">
-            <source type="image/webp" srcset="img/catalog/cruiz-avrora-desktop@2x.webp 2x, img/catalog/cruiz-avrora-desktop@1x.webp 1x">
-            <source media="(max-width: 767px)" srcset="img/catalog/cruiz-avrora-mobile@2x.png 2x, img/catalog/cruiz-avrora-mobile@1x.png">
-            <source media="(max-width: 1365px)" srcset="img/catalog/cruiz-avrora-tablet@2x.png 2x, img/catalog/cruiz-avrora-tablet@1x.png 1x">
-            <img src="img/catalog/cruiz-avrora-desktop@2x.png 2x, img/catalog/cruiz-avrora-desktop@1x.png 1x" alt="Изображение пингвинов">
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/catalog/cruiz-avrora-mobile@2x.webp 2x, img/catalog/cruiz-avrora-mobile@1x.wepb">
+            <source type="image/webp" media="(max-width: 1365px)"
+              srcset="img/catalog/cruiz-avrora-tablet@2x.webp 2x, img/catalog/cruiz-avrora-tablet@1x.webp 1x">
+            <source type="image/webp"
+              srcset="img/catalog/cruiz-avrora-desktop@2x.webp 2x, img/catalog/cruiz-avrora-desktop@1x.webp 1x">
+            <source media="(max-width: 767px)"
+              srcset="img/catalog/cruiz-avrora-mobile@2x.png 2x, img/catalog/cruiz-avrora-mobile@1x.png">
+            <source media="(max-width: 1365px)"
+              srcset="img/catalog/cruiz-avrora-tablet@2x.png 2x, img/catalog/cruiz-avrora-tablet@1x.png 1x">
+            <img src="img/catalog/cruiz-avrora-desktop@2x.png 2x, img/catalog/cruiz-avrora-desktop@1x.png 1x"
+              alt="Изображение пингвинов">
           </picture>
           <h3 class="cruizes_item__title section__title3">
             Круиз “Аврора”
@@ -274,12 +323,18 @@
         </li>
         <li class="cruizes__item">
           <picture>
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog/cruiz-leonor-mobile@2x.webp 2x, img/catalog/cruiz-leonor-mobile@1x.wepb">
-            <source type="image/webp" media="(max-width: 1365px)" srcset="img/catalog/cruiz-leonor-tablet@2x.webp 2x, img/catalog/cruiz-leonor-tablet@1x.webp 1x">
-            <source type="image/webp" srcset="img/catalog/cruiz-leonor-desktop@2x.webp 2x, img/catalog/cruiz-leonor-desktop@1x.webp 1x">
-            <source media="(max-width: 767px)" srcset="img/catalog/cruiz-leonor-mobile@2x.png 2x, img/catalog/cruiz-leonor-mobile@1x.png">
-            <source media="(max-width: 1365px)" srcset="img/catalog/cruiz-leonor-tablet@2x.png 2x, img/catalog/cruiz-leonor-tablet@1x.png 1x">
-            <img src="img/catalog/cruiz-leonor-desktop@2x.png 2x, img/catalog/cruiz-leonor-desktop@1x.png 1x" alt="Изображение пингвинов">
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/catalog/cruiz-leonor-mobile@2x.webp 2x, img/catalog/cruiz-leonor-mobile@1x.wepb">
+            <source type="image/webp" media="(max-width: 1365px)"
+              srcset="img/catalog/cruiz-leonor-tablet@2x.webp 2x, img/catalog/cruiz-leonor-tablet@1x.webp 1x">
+            <source type="image/webp"
+              srcset="img/catalog/cruiz-leonor-desktop@2x.webp 2x, img/catalog/cruiz-leonor-desktop@1x.webp 1x">
+            <source media="(max-width: 767px)"
+              srcset="img/catalog/cruiz-leonor-mobile@2x.png 2x, img/catalog/cruiz-leonor-mobile@1x.png">
+            <source media="(max-width: 1365px)"
+              srcset="img/catalog/cruiz-leonor-tablet@2x.png 2x, img/catalog/cruiz-leonor-tablet@1x.png 1x">
+            <img src="img/catalog/cruiz-leonor-desktop@2x.png 2x, img/catalog/cruiz-leonor-desktop@1x.png 1x"
+              alt="Изображение пингвинов">
           </picture>
           <h3 class="cruizes_item__title section__title3">
             Круиз “Леонор”
@@ -297,12 +352,18 @@
         </li>
         <li class="cruizes__item">
           <picture>
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog/cruiz-minion-mobile@2x.webp 2x, img/catalog/cruiz-minion-mobile@1x.wepb">
-            <source type="image/webp" media="(max-width: 1365px)" srcset="img/catalog/cruiz-minion-tablet@2x.webp 2x, img/catalog/cruiz-minion-tablet@1x.webp 1x">
-            <source type="image/webp" srcset="img/catalog/cruiz-minion-desktop@2x.webp 2x, img/catalog/cruiz-minion-desktop@1x.webp 1x">
-            <source media="(max-width: 767px)" srcset="img/catalog/cruiz-minion-mobile@2x.png 2x, img/catalog/cruiz-minion-mobile@1x.png">
-            <source media="(max-width: 1365px)" srcset="img/catalog/cruiz-minion-tablet@2x.png 2x, img/catalog/cruiz-minion-tablet@1x.png 1x">
-            <img src="img/catalog/cruiz-minion-desktop@2x.png 2x, img/catalog/cruiz-minion-desktop@1x.png 1x" alt="Изображение пингвинов">
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/catalog/cruiz-minion-mobile@2x.webp 2x, img/catalog/cruiz-minion-mobile@1x.wepb">
+            <source type="image/webp" media="(max-width: 1365px)"
+              srcset="img/catalog/cruiz-minion-tablet@2x.webp 2x, img/catalog/cruiz-minion-tablet@1x.webp 1x">
+            <source type="image/webp"
+              srcset="img/catalog/cruiz-minion-desktop@2x.webp 2x, img/catalog/cruiz-minion-desktop@1x.webp 1x">
+            <source media="(max-width: 767px)"
+              srcset="img/catalog/cruiz-minion-mobile@2x.png 2x, img/catalog/cruiz-minion-mobile@1x.png">
+            <source media="(max-width: 1365px)"
+              srcset="img/catalog/cruiz-minion-tablet@2x.png 2x, img/catalog/cruiz-minion-tablet@1x.png 1x">
+            <img src="img/catalog/cruiz-minion-desktop@2x.png 2x, img/catalog/cruiz-minion-desktop@1x.png 1x"
+              alt="Изображение пингвинов">
           </picture>
           <h3 class="cruizes_item__title section__title3">
             Круиз “Минион - 1”
@@ -369,7 +430,10 @@
         Наши контакты
       </h2>
       <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2suk!4v1658274146411!5m2!1sru!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2suk!4v1658274146411!5m2!1sru!2suk"
+          height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="contacts__info">
         <h3 class="section__title3">
@@ -383,44 +447,68 @@
           8-800-200-00-00
         </a>
       </div>
-    </section>
+    </section> -->
   </main>
-  <footer>
-    <a class="footer__logo">
-      <picture>
-        <source media="(max-width:767px)" width="42" height="22" srcset="img/svg/logo-antarctica.svg">
-        <source media="(max-width: 1365px)" width="38" height="20" srcset="img/svg/logo-antarctica.svg">
-        <img width="70" height="38" src="img/svg/logo-antarctica.svg"
-          alt="Логотип сервиса по продаже круизов в Антарктику">
-      </picture>
-    </a>
-    <ul class="footer__nav">
+  <footer class="footer">
+    <div class="footer__container container">
+      <a class="footer__logo">
+        <picture>
+          <source media="(max-width:767px)" width="42" height="22" srcset="img/svg/logo-antarctica.svg">
+          <source media="(max-width: 1365px)" width="38" height="20" srcset="img/svg/logo-antarctica.svg">
+          <img width="70" height="38" src="img/svg/logo-antarctica.svg"
+            alt="Логотип сервиса по продаже круизов в Антарктику">
+        </picture>
+      </a>
+      <ul class="footer__nav">
 
-    </ul>
-    <ul class="footer__socials">
-      <li class="footer_socials__item">
-        <a href="#" class="footer_socials__link">
-          <svg>
-            <use xlink:href="img/sprite_auto.svg#logo-facebook"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="footer_socials__item">
-        <a href="#" class="footer_socials__link">
-          <svg>
-            <use xlink:href="img/sprite_auto.svg#logo-instagram"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="footer_socials__item">
-        <a href="#" class="footer_socials__link">
-          <svg>
-            <use xlink:href="img/sprite_auto.svg#logo-twitter"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
+        <li class="footer_nav__item">
+          <a href="#advantages" class="footer_nav__link">
+            Преимущества
+          </a>
+        </li>
+        <li class="footer_nav__item">
+          <a href="#" class="footer_nav__link">
+            Направления
+          </a>
+        </li>
+        <li class="footer_nav__item">
+          <a href="#cruizes" class="footer_nav__link">
+            Ближайшие круизы
+          </a>
+        </li>
+        <li class="footer_nav__item">
+          <a href="#contacts" class="footer_nav__link">
+            Контакты
+          </a>
+        </li>
+
+      </ul>
+      <ul class="footer__socials">
+        <li class="footer_socials__item">
+          <a href="#" class="footer_socials__link">
+            <svg>
+              <use xlink:href="img/sprite_auto.svg#logo-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer_socials__item">
+          <a href="#" class="footer_socials__link">
+            <svg>
+              <use xlink:href="img/sprite_auto.svg#logo-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer_socials__item">
+          <a href="#" class="footer_socials__link">
+            <svg>
+              <use xlink:href="img/sprite_auto.svg#logo-twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
   </footer>
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>

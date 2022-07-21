@@ -1,0 +1,33 @@
+
+.page {
+
+  box-sizing: border-box;
+  min-width: 320px;
+  height: 100%;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: $color-default-black;
+
+  // @media screen and (min-width: $tablet) {
+  //   min-width: $tablet;
+  // }
+
+  // @media screen and (min-width: $desktop) {
+  //   min-width: $desktop;
+  // }
+}
+
+// .page__body {
+//   min-height: 100%;
+
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 20px;
+//   font-family: "Montserrat", "Arial", sans-serif;
+//   color: $color-base-black;
+// }

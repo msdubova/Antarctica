@@ -1,0 +1,193 @@
+.header {
+  min-height: 650px;
+
+  color: $color-base-white;
+
+  background-color: $color-bg-header;
+  background-image: url("../../img/header-bg-desktop@1x.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include retina () {
+    background-image: url("../../img/header-bg-desktop@2x.webp");
+  }
+  @include vp-1023 {
+    min-height: 638px;
+
+    background-image: url("../../img/header-bg-tablet@1x.webp");
+
+    @include retina () {
+      background-image: url("../../img/header-bg-tablet@2x.webp");
+    }
+  }
+  @include vp-767 {
+    min-height: 500px;
+
+    background-image: url("../../img/header-bg-mobile@1x.webp");
+
+    @include retina () {
+      background-image: url("../../img/header-bg-mobile@2x.webp");
+    }
+  }
+}
+
+.header__container {
+  height: 100vh;
+
+  @include vp-1023 {
+    height: auto;
+  }
+  @include vp-767 {
+    &--hidden {
+      padding-left: 12%;
+    }
+  }
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include vp-767 {
+    position: relative;
+  }
+}
+
+.header__toggle {
+  display: none;
+
+  cursor: pointer;
+
+  @include vp-767 {
+    display: block;
+    width: 24px;
+    height: 12px;
+    padding: 0;
+
+    background: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    &--open {
+      background-image: url("../../img/svg/icon-open.svg");
+    }
+    &--close {
+      z-index: 100;
+
+      order: 100;
+
+      background-image: url("../../img/svg/icon-close.svg");
+    }
+  }
+}
+
+.header__nav {
+  @include vp-767 {
+    &--closed {
+      display: none;
+    }
+    &--opened {
+      position: absolute;
+      top: -20px;
+      left: 0;
+
+      display: block;
+      width: calc(100% + 15px);
+      height: 100vh;
+      padding: 75px 30px 30px 15px;
+
+      background-color: $color-default-white;
+    }
+  }
+}
+
+.header__nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+
+  @include reset-ul();
+  @include vp-767 {
+    position: relative;
+
+    flex-direction: column;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -55px;
+
+      width: 42px;
+      height: 22px;
+
+      background-image: url("../../img/svg/logo-antarctica--nav.svg");
+    }
+  }
+}
+
+.header_nav__item {
+  margin-left: 33px;
+
+  @include vp-1023 {
+    margin-left: 23px;
+  }
+  @include vp-767 {
+    margin-left: 0;
+    padding: 10px 10px 8px 10px;
+  }
+}
+
+.header_nav__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  color: $color-default-white;
+  letter-spacing: 0;
+
+  @include vp-1023 {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 22px;
+    color: $color-default-black;
+  }
+}
+
+.header__promo {
+  padding: 0 95px;
+
+  @include vp-1023 {
+    padding: 0;
+  }
+}
+
+.header__title {
+  margin-top: 210px;
+
+  @include vp-1023 {
+    margin-top: 235px;
+  }
+  @include vp-767 {
+    margin-top: 143px;
+  }
+}
+
+.header__description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: 0;
+
+  @include vp-1023 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  @include vp-767 {
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
