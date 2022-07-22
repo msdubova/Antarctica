@@ -165,10 +165,11 @@ filter: none;
 }
 
 .header__title {
-  margin-top: 210px;
+  margin-top: 198px;
+  margin-bottom: 10px;
 
   @include vp-1023 {
-    margin-top: 235px;
+    margin-top: 217px;
   }
   @include vp-767 {
     margin-top: 143px;
@@ -176,6 +177,7 @@ filter: none;
 }
 
 .header__description {
+  margin-top: 0px;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;

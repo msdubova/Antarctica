@@ -665,14 +665,16 @@ button,
   line-height: 27px;
 }
 
-.btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 10px 0;
-  padding: 10px 20px;
-  color: #ffffff;
-  background-color: #2c39f2;
+.button {
+  display: inline-block;
+  margin: 11px 0;
+  padding: 11px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #011c40;
+  background-color: #f9fbfd;
   border: none;
   cursor: pointer;
   -webkit-transition: opacity 0.3s ease;
@@ -680,11 +682,11 @@ button,
   transition: opacity 0.3s ease;
 }
 
-.btn--red {
+.button--red {
   background-color: #ff1553;
 }
 
-.btn:disabled {
+.button:disabled {
   opacity: 0.5;
   pointer-events: none;
 }
@@ -876,10 +878,12 @@ button,
 }
 
 .header__title {
-  margin-top: 210px;
+  margin-top: 198px;
+  margin-bottom: 10px;
 }
 
 .header__description {
+  margin-top: 0px;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
@@ -894,10 +898,17 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .promo__info {
   width: 48%;
+}
+
+.promo__title {
+  margin-top: 16px;
 }
 
 .promo__text {
@@ -912,6 +923,7 @@ button,
 }
 
 .advantages {
+  padding-top: 54px;
   min-height: 562px;
   background-color: #d4e4f4;
   background-image: url("../../img/advantages-bg-desktop@1x.webp");
@@ -931,6 +943,7 @@ button,
 
 .advantages__title {
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .advantages__list {
@@ -947,19 +960,20 @@ button,
 
 .advantages__item {
   position: relative;
-  width: 30%;
-  padding: 120px 30px 30px 30px;
+  width: 31%;
+  padding: 62px 30px 23px 30px;
   background-color: #f9fbfd;
 }
 
 .advantages__item::before {
   content: "";
   position: absolute;
-  bottom: 70%;
+  top: 30px;
   width: 42px;
   height: 32px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-x: left;
+  background-position-y: center;
 }
 
 .advantages__item--vip::before {
@@ -974,11 +988,308 @@ button,
   background-image: url(../../img/svg/icon-advantage3.svg);
 }
 
+.advantages_item__title {
+  margin-bottom: 10px;
+}
+
 .advantages_item__description {
   margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+}
+
+.cruizes {
+  margin-bottom: 55px;
+}
+
+.cruizes__container {
+  padding-right: 118px;
+  padding-left: 118px;
+  padding-top: 5px;
+}
+
+.cruizes__title {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.cruizes__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cruizes__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 23%;
+  height: 386px;
+  margin-right: 2.64%;
+  margin-bottom: 30px;
+  padding: 20px 30px;
+  color: #f9fbfd;
+}
+
+.cruizes__item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.cruizes__item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.cruizes_item__title {
+  z-index: 2;
+  margin: 0;
+}
+
+.cruizes_item__description {
+  z-index: 2;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0;
+  margin-top: 12px;
+}
+
+.cruizes_item__description dl {
+  margin: 0;
+}
+
+.cruizes_item__description dt {
+  margin-bottom: 2px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.cruizes_item__description dd {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.cruizes__button {
+  margin: 0;
+}
+
+.cruizes__item:hover {
+  background-color: #011c40;
+  padding: 30px 25px;
+}
+
+.cruizes__item:hover img {
+  display: none;
+}
+
+.cruizes__item:hover .cruizes_item__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reservation {
+  min-height: 555px;
+  background-color: #55b6db;
+  background-image: url("../../img/reservation-bg-desktop@1x.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.reservation__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 50px 163px;
+}
+
+.reservation__info {
+  width: 50%;
+}
+
+.reservation__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.reservation__description {
+  width: 70%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.reservation__form {
+  width: 403px;
+}
+
+.form {
+  padding: 44px 48px;
+  color: #f9fbfd;
+  background-color: #011c40;
+  border: none;
+}
+
+.fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0;
+  border: none;
+}
+
+.legend {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 27px;
+}
+
+.fieldset__row {
+  margin: 0;
+  margin-bottom: 19px;
+}
+
+.fieldset__row input {
+  width: 100%;
+  padding: 14px 15px 13px 15px;
+  border: 0;
+}
+
+.fieldset__row input[type=checkbox] {
+  display: none;
+}
+
+.label {
+  position: relative;
+  display: inline-block;
+  padding-left: 24px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -3px;
+  width: 18px;
+  height: 18px;
+  background-color: #f9fbfd;
+}
+
+.fieldset__row input[type=checkbox]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background-image: url("../../img/svg/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__button {
+  margin-bottom: 5px;
+}
+
+.contacts {
+  margin-bottom: 80px;
+}
+
+.contacts__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding-right: 92px;
+  padding-left: 114px;
+}
+
+.contacts__map {
+  width: 48%;
+}
+
+.contacts__map iframe {
+  width: 100%;
+  height: 306px;
+}
+
+.contacts__info {
+  width: 43%;
+  margin-top: 58px;
+  margin-left: auto;
+}
+
+.contacts__title {
+  margin-bottom: 31px;
+}
+
+.contacts__item {
+  position: relative;
+  padding-left: 28px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  background-repeat: no-repeat;
+}
+
+.contacts__item::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 22px;
+}
+
+.contacts__item--adress {
+  background-image: url("../../img/svg/icon-pin.svg");
+  margin-bottom: 20px;
+}
+
+.contacts__item--tel {
+  background-image: url("../../img/svg/icon-tel.svg");
 }
 
 .footer {
@@ -989,12 +1300,13 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 50px 103px;
 }
 
 .footer__logo {
@@ -1007,7 +1319,6 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: auto;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1028,15 +1339,16 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 106px;
+  width: 112px;
+  margin-left: auto;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .footer_socials__link svg {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   vertical-align: middle;
   text-align: center;
 }
@@ -1049,15 +1361,15 @@ button,
 } */
 
 @media (hover: hover), screen and (min-width: 0\0) {
-  .btn:hover,
-  .btn:focus {
+  .button:hover,
+  .button:focus {
     opacity: 0.8;
   }
 }
 
 @media (max-width: 1023px) {
   .container {
-    padding: 35px 45px;
+    padding: 30px 45px;
   }
 
   .section {
@@ -1099,7 +1411,7 @@ button,
   }
 
   .header__title {
-    margin-top: 235px;
+    margin-top: 217px;
   }
 
   .header__description {
@@ -1130,6 +1442,58 @@ button,
     bottom: 80%;
   }
 
+  .cruizes__container {
+    padding: 0 60px;
+  }
+
+  .cruizes__item {
+    width: 47.7%;
+    margin-right: 4.6%;
+  }
+
+  .cruizes__item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .reservation {
+    min-height: 588px;
+    background-image: url("../../img/reservation-bg-tablet@1x.webp");
+  }
+
+  .reservation__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .reservation__info {
+    width: 100%;
+  }
+
+  .reservation__title {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 51px;
+  }
+
+  .reservation__description {
+    text-align: center;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contacts__container {
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+
+  .contacts__map iframe {
+    height: 335px;
+  }
+
   .footer__logo {
     margin-right: 25px;
   }
@@ -1142,7 +1506,7 @@ button,
   }
 
   .footer__socials {
-    width: 87px;
+    width: 100px;
   }
 
   .footer_socials__link {
@@ -1157,6 +1521,10 @@ button,
 
   .advantages {
     background-image: url("../../img/advantages-bg-tablet@2x.webp");
+  }
+
+  .reservation {
+    background-image: url("../../img/reservation-bg-tablet@2x.webp");
   }
 }
 
@@ -1312,6 +1680,46 @@ button,
     margin-bottom: 30PX;
   }
 
+  .cruizes__item {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .reservation {
+    min-height: 760px;
+    background-image: url("../../img/reservation-bg-mobile@1x.webp");
+  }
+
+  .reservation__form {
+    width: 100%;
+  }
+
+  .form {
+    padding: 40px 30px;
+  }
+
+  .contacts__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .contacts__map {
+    -webkit-box-ordinal-group: 101;
+    -ms-flex-order: 100;
+    order: 100;
+    width: 100%;
+  }
+
+  .contacts__map iframe {
+    height: 316px;
+  }
+
+  .contacts__info {
+    width: 100%;
+  }
+
   .footer__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1354,6 +1762,10 @@ button,
   .advantages {
     background-image: url("../../img/advantages-bg-mobile@2x.webp");
   }
+
+  .reservation {
+    background-image: url("../../img/reservation-bg-mobile@2x.webp");
+  }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -1363,5 +1775,9 @@ button,
 
   .advantages {
     background-image: url("../../img/advantages-bg-desktop@2x.webp");
+  }
+
+  .reservation {
+    background-image: url("../../img/reservation-bg-desktop@2x.webp");
   }
 }

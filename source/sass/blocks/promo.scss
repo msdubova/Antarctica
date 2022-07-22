@@ -1,7 +1,7 @@
 .promo__container {
   display: flex;
   justify-content: space-between;
-
+align-items: center;
   @include vp-767 {
     flex-direction: column;
   }
@@ -15,6 +15,7 @@
   }
 }
 .promo__title {
+  margin-top: 16px;
   @include vp-1023 {
     max-width: 205px ;
     margin: 0;
@@ -35,5 +36,6 @@
   @include vp-1023 {
     width: 324px;
     margin-left: 0;
+
   }
 }
