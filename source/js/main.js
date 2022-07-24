@@ -45,15 +45,15 @@
 
 // // используйте .closest(el)
 
-var burgerButton = document.querySelector('.header__toggle');
-var burgerNav = document.querySelector('.header__nav');
-var burgerParent = document.querySelector('.header__container');
+let burgerButton = document.querySelector('.header__toggle');
+let burgerNav = document.querySelector('.header__nav');
+let burgerParent = document.querySelector('.header__container');
 
-burgerButton.addEventListener('click', function(){
+burgerButton.addEventListener('click', function () {
   burgerNav.classList.toggle('header__nav--opened');
   burgerNav.classList.toggle('header__nav--closed');
   burgerButton.classList.toggle('header__toggle--close');
   burgerButton.classList.toggle('header__toggle--open');
-  burgerParent.classList.toggle(
-    'header__container--hidden');
+  burgerParent.classList.toggle('header__container--hidden');
 })
+;

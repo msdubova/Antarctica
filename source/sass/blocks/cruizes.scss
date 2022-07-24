@@ -11,13 +11,14 @@
 }
 
 .cruizes__container {
-  padding-top: 5px;
+  padding-top: 2px;
   padding-right: 118px;
   padding-left: 118px;
 
   @include vp-1023 {
     padding: 5px 60px 0 60px;
   }
+
   @include vp-767 {
     padding-top: 12px;
     padding-right: 25px;
@@ -33,6 +34,7 @@
   @include vp-1023 {
     margin-bottom: 50px;
   }
+
   @include vp-767 {
     margin-top: 0;
     margin-bottom: 32px;
@@ -51,7 +53,7 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   width: 23%;
   height: 386px;
   margin-right: 2.64%;
@@ -65,16 +67,21 @@
     width: 47.7%;
     margin-right: 4.6%;
     padding: 25px 35px;
+
     &:nth-child(2n) {
       margin-right: 0;
     }
   }
+
   @include vp-767 {
     width: 100%;
     margin-right: 0;
+    padding: 15px 25px;
   }
+
   -ms-overflow-style: none;
   scrollbar-width: none;
+
   &::-webkit-scrollbar {
     width: 0;
     height: 0;
@@ -82,6 +89,20 @@
 
   &:nth-child(4n) {
     margin-right: 0;
+  }
+
+  &:hover {
+    padding: 30px 25px 35px 25px;
+
+    background-color: $color-bg-primary;
+
+    @include vp-1023 {
+      padding: 30px 35px 35px 35px;
+    }
+
+    @include vp-767 {
+      padding: 30px 25px 35px 25px;
+    }
   }
 }
 
@@ -93,25 +114,32 @@
 
   width: 100%;
   height: 100%;
+
+  background-color: $color-bg-advantages;
 }
 
 .cruizes_item__title {
   z-index: 2;
 
   margin: 0;
+  padding: 0;
 }
 
 .cruizes_item__description {
   z-index: 2;
 
   display: none;
+  flex-grow: 1;
   flex-direction: column;
+  justify-content: flex-start;
   margin: 0;
   margin-top: 12px;
 }
+
 .cruizes_item__description dl {
   margin: 0;
 }
+
 .cruizes_item__description dt {
   margin-bottom: 2px;
 
@@ -128,19 +156,20 @@
   font-size: 14px;
   line-height: 20px;
 }
+
 .cruizes__button {
   margin: 0;
+  margin-top: auto;
+  padding: 10px 10px 8px 10px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
 }
 
-.cruizes__item:hover {
-  padding: 30px 25px;
-
-  background-color: $color-bg-primary;
-}
-.cruizes__item:hover img {
+.cruizes__item:hover picture {
   display: none;
 }
-
 
 .cruizes__item:hover .cruizes_item__description {
   display: flex;

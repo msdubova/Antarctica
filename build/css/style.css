@@ -667,8 +667,9 @@ button,
 
 .button {
   display: inline-block;
-  margin: 11px 0;
-  padding: 11px 20px;
+  vertical-align: middle;
+  margin: 10px 0;
+  padding: 10px 20px 11px 20px;
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
@@ -814,6 +815,7 @@ button,
   line-height: 20px;
   font-family: "Montserrat", "Arial", sans-serif;
   color: #000000;
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -823,12 +825,9 @@ button,
   background-image: url("../../img/header-bg-desktop@1x.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.header__container {
-  height: 100vh;
+  background-position: bottom;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .header__top {
@@ -898,6 +897,9 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .promo__info {
@@ -915,13 +917,17 @@ button,
 }
 
 .promo__image {
-  width: 560px;
+  width: 565px;
   margin-left: 50px;
+}
+
+.promo__image img {
+  width: 100%;
 }
 
 .advantages {
   min-height: 562px;
-  padding-top: 54px;
+  padding-top: 50px;
   background-color: #d4e4f4;
   background-image: url("../../img/advantages-bg-desktop@1x.webp");
   background-repeat: no-repeat;
@@ -957,7 +963,7 @@ button,
 
 .advantages__item {
   position: relative;
-  width: 30.6%;
+  width: 31%;
   padding: 62px 30px 23px 30px;
   background-color: #f9fbfd;
 }
@@ -974,15 +980,15 @@ button,
 }
 
 .advantages__item--vip::before {
-  background-image: url(../../img/svg/icon-advantage1.svg);
+  background-image: url("../../img/svg/icon-advantage1.svg");
 }
 
 .advantages__item--allincluded::before {
-  background-image: url(../../img/svg/icon-advantage2.svg);
+  background-image: url("../../img/svg/icon-advantage2.svg");
 }
 
 .advantages__item--zodiac::before {
-  background-image: url(../../img/svg/icon-advantage3.svg);
+  background-image: url("../../img/svg/icon-advantage3.svg");
 }
 
 .advantages_item__title {
@@ -1001,7 +1007,7 @@ button,
 }
 
 .cruizes__container {
-  padding-top: 5px;
+  padding-top: 2px;
   padding-right: 118px;
   padding-left: 118px;
 }
@@ -1031,9 +1037,9 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   width: 23%;
   height: 386px;
   margin-right: 2.64%;
@@ -1054,6 +1060,11 @@ button,
   margin-right: 0;
 }
 
+.cruizes__item:hover {
+  padding: 30px 25px 35px 25px;
+  background-color: #011c40;
+}
+
 .cruizes__item img {
   position: absolute;
   top: 0;
@@ -1061,20 +1072,28 @@ button,
   z-index: -1;
   width: 100%;
   height: 100%;
+  background-color: #d4e4f4;
 }
 
 .cruizes_item__title {
   z-index: 2;
   margin: 0;
+  padding: 0;
 }
 
 .cruizes_item__description {
   z-index: 2;
   display: none;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   margin: 0;
   margin-top: 12px;
 }
@@ -1100,14 +1119,14 @@ button,
 
 .cruizes__button {
   margin: 0;
+  margin-top: auto;
+  padding: 10px 10px 8px 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
 }
 
-.cruizes__item:hover {
-  padding: 30px 25px;
-  background-color: #011c40;
-}
-
-.cruizes__item:hover img {
+.cruizes__item:hover picture {
   display: none;
 }
 
@@ -1132,17 +1151,19 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   padding: 50px 163px;
 }
 
 .reservation__info {
   width: 50%;
+  margin-top: 130px;
 }
 
 .reservation__title {
+  margin-bottom: 0;
   font-weight: 700;
   font-size: 40px;
   line-height: 60px;
@@ -1150,6 +1171,7 @@ button,
 
 .reservation__description {
   width: 70%;
+  margin-top: 10px;
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
@@ -1160,7 +1182,8 @@ button,
 }
 
 .reservation__button {
-  margin-bottom: 5px;
+  margin-top: 8px;
+  margin-bottom: 7px;
 }
 
 .form {
@@ -1183,7 +1206,7 @@ button,
 }
 
 .legend {
-  margin-bottom: 27px;
+  margin-bottom: 28px;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -1191,22 +1214,47 @@ button,
 
 .fieldset__row {
   margin: 0;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 }
 
 .fieldset__row input {
   width: 100%;
-  padding: 14px 15px 13px 15px;
+  padding: 12px 15px 10px 15px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #011c40;
   border: 0;
 }
 
-.fieldset__row input[type=checkbox] {
+.fieldset__row input::-webkit-input-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.fieldset__row input::-moz-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.fieldset__row input:-ms-input-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.fieldset__row input::-ms-input-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.fieldset__row input::placeholder {
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.fieldset__row input[type="checkbox"] {
   display: none;
 }
 
 .label {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   padding-left: 24px;
   font-weight: 400;
   font-size: 10px;
@@ -1216,17 +1264,17 @@ button,
 .label::before {
   content: "";
   position: absolute;
-  top: -3px;
+  top: -5px;
   left: 0;
   width: 18px;
   height: 18px;
   background-color: #f9fbfd;
 }
 
-.fieldset__row input[type=checkbox]:checked + label::after {
+.fieldset__row input[type="checkbox"]:checked + label::after {
   content: "";
   position: absolute;
-  top: -3px;
+  top: -5px;
   left: 0;
   width: 18px;
   height: 18px;
@@ -1260,6 +1308,10 @@ button,
 .contacts__map iframe {
   width: 100%;
   height: 306px;
+  background-color: #e0c29c;
+  background-image: url("../../img/map/map-desktop-1x.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contacts__info {
@@ -1279,13 +1331,6 @@ button,
   font-size: 16px;
   line-height: 24px;
   background-repeat: no-repeat;
-}
-
-.contacts__item::before {
-  content: "";
-  position: absolute;
-  width: 18px;
-  height: 22px;
 }
 
 .contacts__item--adress {
@@ -1355,7 +1400,7 @@ button,
   width: 20px;
   height: 20px;
   vertical-align: middle;
-  text-align: center;
+  text-align: left;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -1393,9 +1438,9 @@ button,
 
   .header {
     min-height: 638px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
     background-image: url("../../img/header-bg-tablet@1x.webp");
-    -webkit-filter: none;
-    filter: none;
   }
 
   .header__container {
@@ -1429,9 +1474,9 @@ button,
   }
 
   .promo__container {
-    -webkit-box-align: top;
-    -ms-flex-align: top;
-    align-items: top;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     padding-top: 25px;
   }
 
@@ -1448,6 +1493,7 @@ button,
 
   .advantages {
     min-height: 588px;
+    padding-top: 54px;
     background-image: url("../../img/advantages-bg-tablet@1x.webp");
   }
 
@@ -1456,6 +1502,7 @@ button,
   }
 
   .advantages__item {
+    width: 30.6%;
     padding: 54px 17px 20px 20px;
   }
 
@@ -1463,7 +1510,13 @@ button,
     top: 27px;
     width: 38px;
     height: 26px;
-    border: 1px red dashed;
+  }
+
+  .advantages__item--vip::before {
+    left: 15px;
+    -webkit-transform: scaleX(0.8);
+    -ms-transform: scaleX(0.8);
+    transform: scaleX(0.8);
   }
 
   .advantages_item__title {
@@ -1494,8 +1547,12 @@ button,
     margin-right: 0;
   }
 
+  .cruizes__item:hover {
+    padding: 30px 35px 35px 35px;
+  }
+
   .reservation {
-    min-height: 588px;
+    min-height: 805px;
     background-image: url("../../img/reservation-bg-tablet@1x.webp");
   }
 
@@ -1504,16 +1561,19 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     padding-top: 60px;
   }
 
   .reservation__info {
     width: 100%;
+    margin-top: 0;
     margin-bottom: 34px;
   }
 
   .reservation__title {
-    margin-bottom: 0;
     font-weight: 700;
     font-size: 34px;
     line-height: 51px;
@@ -1528,8 +1588,12 @@ button,
     text-align: center;
   }
 
-  .reservation__button {
-    margin-bottom: 7px;
+  .label::before {
+    top: -5px;
+  }
+
+  .fieldset__row input[type="checkbox"]:checked + label::after {
+    top: -5px;
   }
 
   .contacts {
@@ -1537,13 +1601,14 @@ button,
   }
 
   .contacts__container {
-    padding-top: 105px;
+    padding-top: 35px;
     padding-right: 45px;
     padding-left: 45px;
   }
 
   .contacts__map iframe {
     height: 335px;
+    background-image: url("../../img/map/map-tablet-1x.webp");
   }
 
   .contacts__info {
@@ -1553,6 +1618,10 @@ button,
 
   .contacts__title {
     margin-bottom: 28px;
+  }
+
+  .contacts__item--adress {
+    background-position: 1px 3px;
   }
 
   .footer__container {
@@ -1601,6 +1670,10 @@ button,
   .reservation {
     background-image: url("../../img/reservation-bg-tablet@2x.webp");
   }
+
+  .contacts__map iframe {
+    background-image: url("../../img/map/map-tablet-2x.webp");
+  }
 }
 
 @media (max-width: 767px) {
@@ -1641,7 +1714,7 @@ button,
   }
 
   .header__container--hidden {
-    padding-left: 12%;
+    padding-left: 35px;
   }
 
   .header__top {
@@ -1655,8 +1728,8 @@ button,
     padding: 0;
     background: none;
     background-repeat: no-repeat;
-    background-size: contain;
     background-position: center;
+    background-size: contain;
     border: none;
   }
 
@@ -1669,6 +1742,8 @@ button,
     -webkit-box-ordinal-group: 101;
     -ms-flex-order: 100;
     order: 100;
+    width: 13px;
+    height: 13px;
     background-image: url("../../img/svg/icon-close.svg");
   }
 
@@ -1706,7 +1781,7 @@ button,
 
   .header_nav__item {
     margin-left: 0;
-    padding: 10px 10px 8px 10px;
+    padding: 10px 10px 18px 10px;
   }
 
   .header_nav__link {
@@ -1798,6 +1873,11 @@ button,
   .cruizes__item {
     width: 100%;
     margin-right: 0;
+    padding: 15px 25px;
+  }
+
+  .cruizes__item:hover {
+    padding: 30px 25px 35px 25px;
   }
 
   .reservation {
@@ -1822,7 +1902,7 @@ button,
   }
 
   .reservation__description {
-    width: 90%;
+    width: 91.8%;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -1858,6 +1938,15 @@ button,
   }
 
   .label::before {
+    width: 20px;
+    height: 20px;
+  }
+
+  .label::before {
+    top: 0;
+  }
+
+  .fieldset__row input[type="checkbox"]:checked + label::after {
     top: 0;
     width: 20px;
     height: 20px;
@@ -1881,6 +1970,7 @@ button,
 
   .contacts__map iframe {
     height: 316px;
+    background-image: url("../../img/map/map-mobile-1x.webp");
   }
 
   .contacts__info {
@@ -1943,6 +2033,10 @@ button,
   .reservation {
     background-image: url("../../img/reservation-bg-mobile@2x.webp");
   }
+
+  .contacts__map iframe {
+    background-image: url("../../img/map/map-mobile-2x.webp");
+  }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -1956,5 +2050,9 @@ button,
 
   .reservation {
     background-image: url("../../img/reservation-bg-desktop@2x.webp");
+  }
+
+  .contacts__map iframe {
+    background-image: url("../../img/map/map-desktop-2x.webp");
   }
 }

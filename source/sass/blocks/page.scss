@@ -1,6 +1,5 @@
 
 .page {
-
   box-sizing: border-box;
   min-width: 320px;
   height: 100%;
@@ -11,6 +10,8 @@
   line-height: 20px;
   font-family: "Montserrat", "Arial", sans-serif;
   color: $color-default-black;
+
+  scroll-behavior: smooth;
 
   // @media screen and (min-width: $tablet) {
   //   min-width: $tablet;

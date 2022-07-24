@@ -10,8 +10,9 @@
   @include retina () {
     background-image: url("../../img/reservation-bg-desktop@2x.webp");
   }
+
   @include vp-1023 {
-    min-height: 588px;
+    min-height: 805px;
 
     background-image: url("../../img/reservation-bg-tablet@1x.webp");
 
@@ -19,9 +20,11 @@
       background-image: url("../../img/reservation-bg-tablet@2x.webp");
     }
   }
+
   @include vp-767 {
     min-height: 760px;
-margin-bottom: 40px;
+    margin-bottom: 40px;
+
     background-image: url("../../img/reservation-bg-mobile@1x.webp");
 
     @include retina () {
@@ -29,16 +32,19 @@ margin-bottom: 40px;
     }
   }
 }
+
 .reservation__container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 50px 163px;
 
   @include vp-1023 {
     flex-direction: column;
+    align-items: center;
     padding-top: 60px;
   }
+
   @include vp-767 {
     padding-top: 38px;
   }
@@ -46,28 +52,33 @@ margin-bottom: 40px;
 
 .reservation__info {
   width: 50%;
+  margin-top: 130px;
 
   @include vp-1023 {
     width: 100%;
+    margin-top: 0;
     margin-bottom: 34px;
   }
+
   @include vp-767 {
     margin-bottom: 18px;
   }
 }
+
 .reservation__title {
+  margin-bottom: 0;
+
   font-weight: 700;
   font-size: 40px;
   line-height: 60px;
 
   @include vp-1023 {
-    margin-bottom: 0;
-
     font-weight: 700;
     font-size: 34px;
     line-height: 51px;
     text-align: center;
   }
+
   @include vp-767 {
     margin-bottom: 15px;
 
@@ -76,8 +87,10 @@ margin-bottom: 40px;
     line-height: 31px;
   }
 }
+
 .reservation__description {
   width: 70%;
+  margin-top: 10px;
 
   font-weight: 400;
   font-size: 18px;
@@ -91,14 +104,16 @@ margin-bottom: 40px;
 
     text-align: center;
   }
+
   @include vp-767 {
-    width: 90%;
+    width: 91.8%;
 
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
   }
 }
+
 .reservation__form {
   width: 403px;
 
@@ -108,13 +123,10 @@ margin-bottom: 40px;
 }
 
 .reservation__button {
-  margin-bottom: 5px;
+  margin-top: 8px;
+  margin-bottom: 7px;
 
-  @include vp-1023 {
-    margin-bottom: 7px;
-  }
   @include vp-767 {
-    margin-top:4px;
+    margin-top: 4px;
   }
-
 }

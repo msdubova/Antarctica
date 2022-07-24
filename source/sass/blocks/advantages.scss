@@ -1,6 +1,6 @@
 .advantages {
   min-height: 562px;
-  padding-top: 54px;
+  padding-top: 50px;
 
   background-color: $color-bg-advantages;
   background-image: url("../../img/advantages-bg-desktop@1x.webp");
@@ -10,8 +10,10 @@
   @include retina () {
     background-image: url("../../img/advantages-bg-desktop@2x.webp");
   }
+
   @include vp-1023 {
     min-height: 588px;
+    padding-top: 54px;
 
     background-image: url("../../img/advantages-bg-tablet@1x.webp");
 
@@ -19,6 +21,7 @@
       background-image: url("../../img/advantages-bg-tablet@2x.webp");
     }
   }
+
   @include vp-767 {
     min-height: 997px;
     padding-top: 38px;
@@ -38,6 +41,7 @@
   @include vp-1023 {
     padding-top: 15px;
   }
+
   @include vp-767 {
     padding-top: 0;
   }
@@ -58,6 +62,7 @@
   justify-content: space-between;
 
   @include reset-ul();
+
   @include vp-767 {
     flex-direction: column;
   }
@@ -66,19 +71,22 @@
 .advantages__item {
   position: relative;
 
-  width: 30.6%;
+  width: 31%;
   padding: 62px 30px 23px 30px;
 
   background-color: $color-base-white;
 
   @include vp-1023 {
+    width: 30.6%;
     padding: 54px 17px 20px 20px;
   }
+
   @include vp-767 {
     width: 100%;
     margin-bottom: 30px;
     padding-bottom: 18px;
   }
+
   &::before {
     content: "";
     position: absolute;
@@ -96,29 +104,34 @@
 
       width: 38px;
       height: 26px;
-
-      border: 1px red dashed;
     }
   }
 
   &--vip {
     &::before {
-      background-image: url(../../img/svg/icon-advantage1.svg);
+      background-image: url("../../img/svg/icon-advantage1.svg");
+
+      @include vp-1023 {
+        left: 15px;
+
+        transform: scaleX(0.8);
+      }
     }
   }
 
   &--allincluded {
     &::before {
-      background-image: url(../../img/svg/icon-advantage2.svg);
+      background-image: url("../../img/svg/icon-advantage2.svg");
     }
   }
 
   &--zodiac {
     &::before {
-      background-image: url(../../img/svg/icon-advantage3.svg);
+      background-image: url("../../img/svg/icon-advantage3.svg");
     }
   }
 }
+
 .advantages_item__title {
   margin-bottom: 10px;
 
@@ -127,10 +140,12 @@
     font-size: 18px;
     line-height: 25px;
   }
+
   @include vp-767 {
     max-width: 70%;
   }
 }
+
 .advantages_item__description {
   margin: 0;
 

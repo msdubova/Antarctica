@@ -15,7 +15,7 @@
   padding-left: 114px;
 
   @include vp-1023 {
-    padding-top: 105px;
+    padding-top: 35px;
     padding-right: 45px;
     padding-left: 45px;
   }
@@ -40,12 +40,33 @@
   width: 100%;
   height: 306px;
 
+  background-color: $color-bg-map;
+  background-image: url("../../img/map/map-desktop-1x.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include retina () {
+    background-image: url("../../img/map/map-desktop-2x.webp");
+  }
+
   @include vp-1023 {
     height: 335px;
+
+    background-image: url("../../img/map/map-tablet-1x.webp");
+
+    @include retina () {
+      background-image: url("../../img/map/map-tablet-2x.webp");
+    }
   }
 
   @include vp-767 {
     height: 316px;
+
+    background-image: url("../../img/map/map-mobile-1x.webp");
+
+    @include retina () {
+      background-image: url("../../img/map/map-mobile-2x.webp");
+    }
   }
 }
 
@@ -84,18 +105,17 @@
   line-height: 24px;
 
   background-repeat: no-repeat;
-  &::before {
-    content: "";
-    position: absolute;
 
-    width: 18px;
-    height: 22px;
-  }
   &--adress {
     margin-bottom: 20px;
 
     background-image: url("../../img/svg/icon-pin.svg");
+
+    @include vp-1023 {
+      background-position: 1px 3px;
+    }
   }
+
   &--tel {
     background-image: url("../../img/svg/icon-tel.svg");
   }

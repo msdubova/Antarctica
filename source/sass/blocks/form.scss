@@ -20,7 +20,7 @@
 }
 
 .legend {
-  margin-bottom: 27px;
+  margin-bottom: 28px;
 
   font-weight: 500;
   font-size: 18px;
@@ -36,20 +36,30 @@
 
 .fieldset__row {
   margin: 0;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 
   @include vp-767 {
     margin-bottom: 20px;
   }
 }
+
 .fieldset__row input {
   width: 100%;
-  padding: 14px 15px 13px 15px;
+  padding: 12px 15px 10px 15px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-input;
 
   border: 0;
+
+  &::placeholder {
+    color: $color-placeholder;
+  }
 }
 
-.fieldset__row input[type=checkbox] {
+.fieldset__row input[type="checkbox"] {
   display: none;
 }
 
@@ -57,6 +67,7 @@
   position: relative;
 
   display: inline-block;
+  vertical-align: middle;
   padding-left: 24px;
 
   font-weight: 400;
@@ -71,37 +82,56 @@
     line-height: 12px;
 
     &::before {
-      top: 0;
-
       width: 20px;
       height: 20px;
     }
   }
+
+
   &::before {
     content: "";
     position: absolute;
-    top: -3px;
+    top: -5px;
     left: 0;
 
-    width: 18px ;
+    width: 18px;
     height: 18px;
 
     background-color: $color-base-white;
+
+    @include vp-1023 {
+      top: -5px;
+    }
+
+    @include vp-767 {
+      top: 0;
+    }
   }
 }
 
-.fieldset__row input[type=checkbox]:checked + label {
+.fieldset__row input[type="checkbox"]:checked + label {
   &::after {
     content: "";
     position: absolute;
-    top: -3px;
+    top: -5px;
     left: 0;
 
-    width: 18px ;
+    width: 18px;
     height: 18px;
 
     background-image: url("../../img/svg/check.svg");
     background-repeat: no-repeat;
     background-position: center;
+
+    @include vp-1023 {
+      top: -5px;
+    }
+
+    @include vp-767 {
+      top: 0;
+
+      width: 20px;
+      height: 20px;
+    }
   }
 }
