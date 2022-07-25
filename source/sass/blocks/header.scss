@@ -4,21 +4,24 @@
   color: $color-base-white;
 
   background-color: $color-bg-header;
-  background-image: url("../../img/header-bg-desktop@1x.webp");
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+  box-shadow: (0 4px 4px rgba(0, 0, 0, 0.25));
 
-  @include retina () {
-    background-image: url("../../img/header-bg-desktop@2x.webp");
+  @include vp-1024 {
+    background-image: url("../../img/header-bg-desktop@1x.webp");
+
+    @include retina () {
+      background-image: url("../../img/header-bg-desktop@2x.webp");
+    }
   }
 
   @include vp-1023 {
     min-height: 638px;
     box-shadow: none;
     background-image: url("../../img/header-bg-tablet@1x.webp");
-
 
     @include retina () {
       background-image: url("../../img/header-bg-tablet@2x.webp");
@@ -153,7 +156,7 @@
   }
 }
 
-.header_nav__link {
+.header_nav__item a {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -181,7 +184,7 @@
   }
 }
 
-.header__title {
+.header h1 {
   margin-top: 198px;
   margin-bottom: 10px;
 
@@ -194,7 +197,7 @@
   }
 }
 
-.header__description {
+.header__promo p {
   margin-top: 0;
 
   font-weight: 400;

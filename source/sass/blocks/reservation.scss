@@ -3,12 +3,17 @@
   min-height: 555px;
 
   background-color: $color-bg-reservation;
-  background-image: url("../../img/reservation-bg-desktop@1x.webp");
+
   background-repeat: no-repeat;
   background-size: cover;
 
-  @include retina () {
-    background-image: url("../../img/reservation-bg-desktop@2x.webp");
+
+  @include vp-1024 {
+    background-image: url("../../img/reservation-bg-desktop@1x.webp");
+
+    @include retina () {
+      background-image: url("../../img/   reservation-bg-desktop@2x.webp");
+    }
   }
 
   @include vp-1023 {
@@ -65,7 +70,7 @@
   }
 }
 
-.reservation__title {
+.reservation h2 {
   margin-bottom: 0;
 
   font-weight: 700;
@@ -88,7 +93,7 @@
   }
 }
 
-.reservation__description {
+.reservation__info p {
   width: 70%;
   margin-top: 10px;
 
@@ -119,14 +124,5 @@
 
   @include vp-767 {
     width: 100%;
-  }
-}
-
-.reservation__button {
-  margin-top: 8px;
-  margin-bottom: 7px;
-
-  @include vp-767 {
-    margin-top: 4px;
   }
 }

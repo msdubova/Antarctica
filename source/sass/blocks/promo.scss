@@ -28,7 +28,7 @@
   }
 }
 
-.promo__title {
+.promo h2 {
   margin-top: 16px;
 
   @include vp-1023 {
@@ -41,7 +41,7 @@
   }
 }
 
-.promo__text {
+.promo__info p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -54,6 +54,7 @@
 .promo__image {
   width: 565px;
   margin-left: 50px;
+  background-color: $color-bg-header;
 
   @include vp-1023 {
     width: 324px;

@@ -1,20 +1,8 @@
-// @font-face {
-//   font-style: normal;
-//   font-weight: 400;
-//   font-family: "Rouble";
-
-//   font-display: swap;
-//   src:
-//     url("../fonts/rouble.woff2") format("woff2"),
-//     url("../fonts/rouble.woff") format("woff");
-// }
-
-
 @font-face {
   font-style: normal;
   font-weight: 400;
+  // font-family: "Montserrat", "Arial", sans-serif;
   font-family: "Montserrat";
-
   font-display: swap;
   src: url("../fonts/montserrat-regular.woff2") format("woff2"), url("../fonts/montserrat-regular.woff") format("woff");
 }
@@ -22,6 +10,7 @@
 @font-face {
   font-style: normal;
   font-weight: 500;
+  // font-family: "Montserrat", "Arial", sans-serif;
   font-family: "Montserrat";
 
   font-display: swap;
@@ -31,6 +20,7 @@
 @font-face {
   font-style: normal;
   font-weight: 600;
+  // font-family: "Montserrat", "Arial", sans-serif;
   font-family: "Montserrat";
 
   font-display: swap;
@@ -40,6 +30,7 @@
 @font-face {
   font-style: normal;
   font-weight: 700;
+  // font-family: "Montserrat", "Arial", sans-serif;
   font-family: "Montserrat";
 
   font-display: swap;

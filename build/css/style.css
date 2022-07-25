@@ -822,12 +822,11 @@ button,
   min-height: 650px;
   color: #f9fbfd;
   background-color: #437cb8;
-  background-image: url("../../img/header-bg-desktop@1x.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .header__top {
@@ -863,7 +862,7 @@ button,
   margin-left: 33px;
 }
 
-.header_nav__link {
+.header_nav__item a {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -876,12 +875,12 @@ button,
   padding: 0 95px;
 }
 
-.header__title {
+.header h1 {
   margin-top: 198px;
   margin-bottom: 10px;
 }
 
-.header__description {
+.header__promo p {
   margin-top: 0;
   font-weight: 400;
   font-size: 20px;
@@ -906,11 +905,11 @@ button,
   width: 48%;
 }
 
-.promo__title {
+.promo h2 {
   margin-top: 16px;
 }
 
-.promo__text {
+.promo__info p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -919,6 +918,7 @@ button,
 .promo__image {
   width: 565px;
   margin-left: 50px;
+  background-color: #437cb8;
 }
 
 .promo__image img {
@@ -929,7 +929,6 @@ button,
   min-height: 562px;
   padding-top: 50px;
   background-color: #d4e4f4;
-  background-image: url("../../img/advantages-bg-desktop@1x.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -944,7 +943,7 @@ button,
   flex-direction: column;
 }
 
-.advantages__title {
+.advantages h2 {
   margin-bottom: 50px;
   text-align: center;
 }
@@ -991,33 +990,33 @@ button,
   background-image: url("../../img/svg/icon-advantage3.svg");
 }
 
-.advantages_item__title {
+.advantages__item h3 {
   margin-bottom: 10px;
 }
 
-.advantages_item__description {
+.advantages__item p {
   margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
 }
 
-.cruizes {
+.catalog {
   margin-bottom: 55px;
 }
 
-.cruizes__container {
+.catalog__container {
   padding-top: 2px;
   padding-right: 118px;
   padding-left: 118px;
 }
 
-.cruizes__title {
+.catalog h2 {
   margin-bottom: 48px;
   text-align: center;
 }
 
-.cruizes__list {
+.catalog__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1028,7 +1027,7 @@ button,
   list-style: none;
 }
 
-.cruizes__item {
+.catalog__item {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1045,43 +1044,36 @@ button,
   margin-right: 2.64%;
   margin-bottom: 30px;
   padding: 20px 30px;
-  overflow: auto;
   color: #f9fbfd;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  background-color: #446494;
 }
 
-.cruizes__item::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-}
-
-.cruizes__item:nth-child(4n) {
+.catalog__item:nth-child(4n) {
   margin-right: 0;
 }
 
-.cruizes__item:hover {
+.catalog__item:hover {
   padding: 30px 25px 35px 25px;
   background-color: #011c40;
 }
 
-.cruizes__item img {
+.catalog__item img {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 1;
   width: 100%;
   height: 100%;
   background-color: #d4e4f4;
 }
 
-.cruizes_item__title {
+.catalog__item h3 {
   z-index: 2;
   margin: 0;
   padding: 0;
 }
 
-.cruizes_item__description {
+.catalog_item__description {
   z-index: 2;
   display: none;
   -webkit-box-flex: 1;
@@ -1096,20 +1088,28 @@ button,
   justify-content: flex-start;
   margin: 0;
   margin-top: 12px;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-.cruizes_item__description dl {
+.catalog_item__description::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.catalog_item__description dl {
   margin: 0;
 }
 
-.cruizes_item__description dt {
+.catalog_item__description dt {
   margin-bottom: 2px;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
 }
 
-.cruizes_item__description dd {
+.catalog_item__description dd {
   margin: 0;
   margin-bottom: 10px;
   font-weight: 400;
@@ -1117,7 +1117,7 @@ button,
   line-height: 20px;
 }
 
-.cruizes__button {
+.catalog__button {
   margin: 0;
   margin-top: auto;
   padding: 10px 10px 8px 10px;
@@ -1126,11 +1126,11 @@ button,
   line-height: 21px;
 }
 
-.cruizes__item:hover picture {
+.catalog__item:hover .catalog_item__picture {
   display: none;
 }
 
-.cruizes__item:hover .cruizes_item__description {
+.catalog__item:hover .catalog_item__description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1139,7 +1139,6 @@ button,
 .reservation {
   min-height: 555px;
   background-color: #55b6db;
-  background-image: url("../../img/reservation-bg-desktop@1x.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1162,14 +1161,14 @@ button,
   margin-top: 130px;
 }
 
-.reservation__title {
+.reservation h2 {
   margin-bottom: 0;
   font-weight: 700;
   font-size: 40px;
   line-height: 60px;
 }
 
-.reservation__description {
+.reservation__info p {
   width: 70%;
   margin-top: 10px;
   font-weight: 400;
@@ -1181,11 +1180,6 @@ button,
   width: 403px;
 }
 
-.reservation__button {
-  margin-top: 8px;
-  margin-bottom: 7px;
-}
-
 .form {
   padding: 44px 48px;
   color: #f9fbfd;
@@ -1193,7 +1187,7 @@ button,
   border: none;
 }
 
-.fieldset {
+.form fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1205,19 +1199,19 @@ button,
   border: none;
 }
 
-.legend {
+.form legend {
   margin-bottom: 28px;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
 }
 
-.fieldset__row {
+.form p {
   margin: 0;
   margin-bottom: 20px;
 }
 
-.fieldset__row input {
+.form input {
   width: 100%;
   padding: 12px 15px 10px 15px;
   font-weight: 400;
@@ -1227,31 +1221,31 @@ button,
   border: 0;
 }
 
-.fieldset__row input::-webkit-input-placeholder {
+.form input::-webkit-input-placeholder {
   color: rgba(1, 28, 64, 0.7);
 }
 
-.fieldset__row input::-moz-placeholder {
+.form input::-moz-placeholder {
   color: rgba(1, 28, 64, 0.7);
 }
 
-.fieldset__row input:-ms-input-placeholder {
+.form input:-ms-input-placeholder {
   color: rgba(1, 28, 64, 0.7);
 }
 
-.fieldset__row input::-ms-input-placeholder {
+.form input::-ms-input-placeholder {
   color: rgba(1, 28, 64, 0.7);
 }
 
-.fieldset__row input::placeholder {
+.form input::placeholder {
   color: rgba(1, 28, 64, 0.7);
 }
 
-.fieldset__row input[type="checkbox"] {
+.form input[type="checkbox"] {
   display: none;
 }
 
-.label {
+input[type="checkbox"] + label {
   position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -1261,7 +1255,7 @@ button,
   line-height: 13px;
 }
 
-.label::before {
+input[type="checkbox"] + label::before {
   content: "";
   position: absolute;
   top: -5px;
@@ -1271,7 +1265,7 @@ button,
   background-color: #f9fbfd;
 }
 
-.fieldset__row input[type="checkbox"]:checked + label::after {
+.form input[type="checkbox"]:checked + label::after {
   content: "";
   position: absolute;
   top: -5px;
@@ -1281,6 +1275,11 @@ button,
   background-image: url("../../img/svg/check.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.form button {
+  margin-top: 8px;
+  margin-bottom: 7px;
 }
 
 .contacts {
@@ -1320,7 +1319,7 @@ button,
   margin-left: auto;
 }
 
-.contacts__title {
+.contacts__info h3 {
   margin-bottom: 31px;
 }
 
@@ -1334,6 +1333,7 @@ button,
 }
 
 .contacts__item--adress {
+  font-style: normal;
   margin-bottom: 20px;
   background-image: url("../../img/svg/icon-pin.svg");
 }
@@ -1374,7 +1374,7 @@ button,
   list-style: none;
 }
 
-.footer_nav__link {
+.footer_nav__item a {
   margin-right: 33px;
   font-weight: 500;
   font-size: 16px;
@@ -1390,7 +1390,6 @@ button,
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 112px;
-  margin-left: auto;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1414,6 +1413,38 @@ button,
   .button:hover,
   .button:focus {
     opacity: 0.8;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    background-image: url("../../img/header-bg-desktop@1x.webp");
+  }
+
+  .advantages {
+    background-image: url("../../img/advantages-bg-desktop@1x.webp");
+  }
+
+  .reservation {
+    background-image: url("../../img/reservation-bg-desktop@1x.webp");
+  }
+
+  .footer__socials {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1024px) and (min-resolution: 144dpi), (min-width: 1024px) and (min-resolution: 1.5dppx) {
+  .header {
+    background-image: url("../../img/header-bg-desktop@2x.webp");
+  }
+
+  .advantages {
+    background-image: url("../../img/advantages-bg-desktop@2x.webp");
+  }
+
+  .reservation {
+    background-image: url("../../img/   reservation-bg-desktop@2x.webp");
   }
 }
 
@@ -1451,7 +1482,7 @@ button,
     margin-left: 23px;
   }
 
-  .header_nav__link {
+  .header_nav__item a {
     font-size: 14px;
     line-height: 17px;
   }
@@ -1460,11 +1491,11 @@ button,
     padding: 0;
   }
 
-  .header__title {
+  .header h1 {
     margin-top: 217px;
   }
 
-  .header__description {
+  .header__promo p {
     font-size: 18px;
     line-height: 22px;
   }
@@ -1480,7 +1511,7 @@ button,
     padding-top: 25px;
   }
 
-  .promo__title {
+  .promo h2 {
     max-width: 205px;
     margin: 0;
   }
@@ -1519,35 +1550,35 @@ button,
     transform: scaleX(0.8);
   }
 
-  .advantages_item__title {
+  .advantages__item h3 {
     font-weight: 500;
     font-size: 18px;
     line-height: 25px;
   }
 
-  .cruizes {
+  .catalog {
     margin-bottom: 70px;
   }
 
-  .cruizes__container {
+  .catalog__container {
     padding: 5px 60px 0 60px;
   }
 
-  .cruizes__title {
+  .catalog h2 {
     margin-bottom: 50px;
   }
 
-  .cruizes__item {
+  .catalog__item {
     width: 47.7%;
     margin-right: 4.6%;
     padding: 25px 35px;
   }
 
-  .cruizes__item:nth-child(2n) {
+  .catalog__item:nth-child(2n) {
     margin-right: 0;
   }
 
-  .cruizes__item:hover {
+  .catalog__item:hover {
     padding: 30px 35px 35px 35px;
   }
 
@@ -1573,14 +1604,14 @@ button,
     margin-bottom: 34px;
   }
 
-  .reservation__title {
+  .reservation h2 {
     font-weight: 700;
     font-size: 34px;
     line-height: 51px;
     text-align: center;
   }
 
-  .reservation__description {
+  .reservation__info p {
     width: 52%;
     margin-top: 5px;
     margin-right: auto;
@@ -1588,11 +1619,11 @@ button,
     text-align: center;
   }
 
-  .label::before {
+  input[type="checkbox"] + label::before {
     top: -5px;
   }
 
-  .fieldset__row input[type="checkbox"]:checked + label::after {
+  .form input[type="checkbox"]:checked + label::after {
     top: -5px;
   }
 
@@ -1616,7 +1647,7 @@ button,
     margin-top: 48px;
   }
 
-  .contacts__title {
+  .contacts__info h3 {
     margin-bottom: 28px;
   }
 
@@ -1636,7 +1667,7 @@ button,
     padding: 20px 0;
   }
 
-  .footer_nav__link {
+  .footer_nav__item a {
     margin-right: 23px;
     padding: 20px 0;
     font-size: 12px;
@@ -1679,6 +1710,7 @@ button,
 @media (max-width: 767px) {
   .container {
     padding: 20px 15px;
+    max-width: 420px;
   }
 
   .section {
@@ -1784,17 +1816,17 @@ button,
     padding: 10px 10px 18px 10px;
   }
 
-  .header_nav__link {
+  .header_nav__item a {
     font-size: 18px;
     line-height: 22px;
     color: #000000;
   }
 
-  .header__title {
+  .header h1 {
     margin-top: 134px;
   }
 
-  .header__description {
+  .header__promo p {
     width: 70%;
     font-weight: 400;
     font-size: 16px;
@@ -1812,11 +1844,11 @@ button,
     width: 100%;
   }
 
-  .promo__title {
+  .promo h2 {
     max-width: 70%;
   }
 
-  .promo__text {
+  .promo__info p {
     margin-bottom: 22px;
   }
 
@@ -1825,8 +1857,8 @@ button,
   }
 
   .advantages {
-    min-height: 997px;
     padding-top: 38px;
+    padding-bottom: 15px;
     background-image: url("../../img/advantages-bg-mobile@1x.webp");
   }
 
@@ -1834,7 +1866,7 @@ button,
     padding-top: 0;
   }
 
-  .advantages__title {
+  .advantages h2 {
     margin-bottom: 30px;
   }
 
@@ -1851,32 +1883,32 @@ button,
     padding-bottom: 18px;
   }
 
-  .advantages_item__title {
+  .advantages__item h3 {
     max-width: 70%;
   }
 
-  .cruizes {
+  .catalog {
     margin-bottom: 15px;
   }
 
-  .cruizes__container {
+  .catalog__container {
     padding-top: 12px;
     padding-right: 25px;
     padding-left: 25px;
   }
 
-  .cruizes__title {
+  .catalog h2 {
     margin-top: 0;
     margin-bottom: 32px;
   }
 
-  .cruizes__item {
+  .catalog__item {
     width: 100%;
     margin-right: 0;
     padding: 15px 25px;
   }
 
-  .cruizes__item:hover {
+  .catalog__item:hover {
     padding: 30px 25px 35px 25px;
   }
 
@@ -1894,14 +1926,14 @@ button,
     margin-bottom: 18px;
   }
 
-  .reservation__title {
+  .reservation h2 {
     margin-bottom: 15px;
     font-weight: 700;
     font-size: 24px;
     line-height: 31px;
   }
 
-  .reservation__description {
+  .reservation__info p {
     width: 91.8%;
     font-weight: 400;
     font-size: 16px;
@@ -1912,44 +1944,44 @@ button,
     width: 100%;
   }
 
-  .reservation__button {
-    margin-top: 4px;
-  }
-
   .form {
     padding: 35px 28px 33px 28px;
   }
 
-  .legend {
+  .form legend {
     margin-bottom: 28px;
     line-height: 25px;
     text-align: center;
   }
 
-  .fieldset__row {
+  .form p {
     margin-bottom: 20px;
   }
 
-  .label {
+  input[type="checkbox"] + label {
     padding-left: 28px;
     font-weight: 400;
     font-size: 10px;
     line-height: 12px;
   }
 
-  .label::before {
+  input[type="checkbox"] + label::before {
     width: 20px;
     height: 20px;
   }
 
-  .label::before {
+  input[type="checkbox"] + label::before {
     top: 0;
   }
 
-  .fieldset__row input[type="checkbox"]:checked + label::after {
+  .form input[type="checkbox"]:checked + label::after {
     top: 0;
     width: 20px;
     height: 20px;
+  }
+
+  .form button {
+    margin-top: 4px;
   }
 
   .contacts__container {
@@ -2008,7 +2040,7 @@ button,
     padding: 6px 0;
   }
 
-  .footer_nav__link {
+  .footer_nav__item a {
     height: 100%;
     margin-right: 0;
   }
@@ -2040,18 +2072,6 @@ button,
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .header {
-    background-image: url("../../img/header-bg-desktop@2x.webp");
-  }
-
-  .advantages {
-    background-image: url("../../img/advantages-bg-desktop@2x.webp");
-  }
-
-  .reservation {
-    background-image: url("../../img/reservation-bg-desktop@2x.webp");
-  }
-
   .contacts__map iframe {
     background-image: url("../../img/map/map-desktop-2x.webp");
   }

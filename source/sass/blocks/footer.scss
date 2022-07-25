@@ -55,7 +55,7 @@
   }
 }
 
-.footer_nav__link {
+.footer_nav__item a {
   margin-right: 33px;
 
   font-weight: 500;
@@ -81,9 +81,12 @@
   display: flex;
   justify-content: space-between;
   width: 112px;
-  margin-left: auto;
 
   @include reset-ul();
+
+  @include vp-1024 {
+    margin-left: auto;
+  }
 
   @include vp-1023 {
     width: 90px;

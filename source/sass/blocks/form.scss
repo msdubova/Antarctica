@@ -11,7 +11,7 @@
   }
 }
 
-.fieldset {
+.form fieldset {
   display: flex;
   flex-direction: column;
   padding: 0;
@@ -19,7 +19,7 @@
   border: none;
 }
 
-.legend {
+.form legend {
   margin-bottom: 28px;
 
   font-weight: 500;
@@ -34,7 +34,7 @@
   }
 }
 
-.fieldset__row {
+.form p {
   margin: 0;
   margin-bottom: 20px;
 
@@ -43,7 +43,7 @@
   }
 }
 
-.fieldset__row input {
+.form input {
   width: 100%;
   padding: 12px 15px 10px 15px;
 
@@ -59,11 +59,11 @@
   }
 }
 
-.fieldset__row input[type="checkbox"] {
+.form input[type="checkbox"] {
   display: none;
 }
 
-.label {
+input[type="checkbox"] + label {
   position: relative;
 
   display: inline-block;
@@ -109,7 +109,7 @@
   }
 }
 
-.fieldset__row input[type="checkbox"]:checked + label {
+.form input[type="checkbox"]:checked + label {
   &::after {
     content: "";
     position: absolute;
@@ -133,5 +133,14 @@
       width: 20px;
       height: 20px;
     }
+  }
+}
+
+.form button {
+  margin-top: 8px;
+  margin-bottom: 7px;
+
+  @include vp-767 {
+    margin-top: 4px;
   }
 }
