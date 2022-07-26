@@ -1,4 +1,3 @@
-
 .reservation {
   min-height: 555px;
 
@@ -12,7 +11,7 @@
     background-image: url("../../img/reservation-bg-desktop@1x.webp");
 
     @include retina () {
-      background-image: url("../../img/   reservation-bg-desktop@2x.webp");
+      background-image: url("../../img/reservation-bg-desktop@2x.webp");
     }
   }
 

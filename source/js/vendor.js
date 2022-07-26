@@ -1,4 +1,4 @@
-export { menuOpen };
+export {menuOpen};
 
 function menuOpen() {
   const navButton = document.querySelector('.header__toggle');
@@ -13,8 +13,6 @@ function menuOpen() {
   headerTop.classList.remove('header__top--nojs');
   navButton.classList.add('header__toggle--open');
   headerNav.classList.add('header__nav--closed');
-
-
 
   function navMenuOpen() {
     headerNav.classList.toggle('header__nav--opened');
@@ -36,7 +34,7 @@ function menuOpen() {
     });
 
     navItems.forEach((item) => {
-      item.addEventListener('click', function (e) {
+      item.addEventListener('click', function () {
         navMenuClose();
       });
     });
@@ -56,24 +54,21 @@ function menuOpen() {
 
     navMenuOpen();
 
-  })
+  });
 }
-;
 
+if (window.localStorage) {
+  let elements = document.querySelectorAll('[name]');
 
+  for (let i = 0, length = elements.length; i < length; i++) {
+    (function (element) {
+      let name = element.getAttribute('name');
 
-// if (window.localStorage) {
-//   let elements = document.querySelectorAll('[name]');
+      element.value = localStorage.getItem(name) || '';
 
-//   for (var i = 0, length = elements.length; i < length; i++) {
-//     (function(element) {
-//       var name = element.getAttribute('name');
-
-//       element.value = localStorage.getItem(name) || '';
-
-//       element.onkeyup = function() {
-//         localStorage.setItem(name, element.value);
-//       };
-//     })(elements[i]);
-//   }
-// }
+      element.onkeyup = function () {
+        localStorage.setItem(name, element.value);
+      };
+    })(elements[i]);
+  }
+}
