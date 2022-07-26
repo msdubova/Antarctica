@@ -898,6 +898,7 @@ button,
 .header h1 {
   margin-top: 198px;
   margin-bottom: 10px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .header__promo p {
@@ -1594,6 +1595,7 @@ input[type="checkbox"] + label::before {
 
   .header h1 {
     margin-top: 217px;
+    text-shadow: none;
   }
 
   .header__promo p {
@@ -1876,6 +1878,16 @@ input[type="checkbox"] + label::before {
     position: relative;
   }
 
+  .header__top--nojs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
   .header__toggle {
     display: block;
     width: 24px;
@@ -1902,6 +1914,10 @@ input[type="checkbox"] + label::before {
     background-image: url("../../img/svg/icon-close.svg");
   }
 
+  .header__toggle--nojs {
+    display: none;
+  }
+
   .header__nav--closed {
     display: none;
   }
@@ -1923,6 +1939,35 @@ input[type="checkbox"] + label::before {
   .header__nav--opened::-webkit-scrollbar {
     width: 0;
     height: 0;
+  }
+
+  .header__nav--nojs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .header__nav--nojs ul {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .header__nav--nojs ul * {
+    width: 100%;
+    margin-bottom: 3px;
+    background-color: #f9fbfd;
+  }
+
+  .header__nav--nojs ul::before {
+    display: none;
   }
 
   .header__nav ul {

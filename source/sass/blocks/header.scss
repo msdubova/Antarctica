@@ -7,7 +7,7 @@
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  box-shadow: (0 4px 4px rgba(0, 0, 0, 0.25));
+  box-shadow: (0 4px 4px $color-shadow);
 
   @include vp-1024 {
     background-image: url("../../img/header-bg-desktop@1x.webp");
@@ -56,6 +56,11 @@
 
   @include vp-767 {
     position: relative;
+
+    &--nojs {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 }
 
@@ -89,6 +94,10 @@
 
       background-image: url("../../img/svg/icon-close.svg");
     }
+
+    &--nojs {
+      display: none;
+    }
   }
 }
 
@@ -119,6 +128,30 @@
         height: 0;
       }
     }
+
+    &--nojs {
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+
+      & ul {
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        & * {
+          width: 100%;
+          margin-bottom: 3px;
+
+          background-color: $color-base-white;
+        }
+
+        &::before {
+          display: none;
+        }
+      }
+    }
   }
 }
 
@@ -143,6 +176,13 @@
 
       background-image: url("../../img/svg/logo-antarctica--nav.svg");
     }
+  }
+}
+
+
+.header__nav--nojs ul {
+  @include vp-767 {
+
   }
 }
 
@@ -189,8 +229,12 @@
   margin-top: 198px;
   margin-bottom: 10px;
 
+  text-shadow: 0 4px 4px $color-shadow;
+
   @include vp-1023 {
     margin-top: 217px;
+
+    text-shadow: none;
   }
   @include vp-767 {
     margin-top: 134px;
