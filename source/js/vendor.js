@@ -4,8 +4,17 @@ function menuOpen() {
   const navButton = document.querySelector('.header__toggle');
   const headerNav = document.querySelector('.header__nav');
   const navContainer = document.querySelector('.header__container');
+  const headerTop = document.querySelector('.header__top');
   const body = document.body;
   const navItems = headerNav.querySelectorAll('a[href*="#"]');
+
+  navButton.classList.remove('header__toggle--nojs');
+  headerNav.classList.remove('header__nav--nojs');
+  headerTop.classList.remove('header__top--nojs');
+  navButton.classList.add('header__toggle--open');
+  headerNav.classList.add('header__nav--closed');
+
+
 
   function navMenuOpen() {
     headerNav.classList.toggle('header__nav--opened');
