@@ -829,13 +829,28 @@ button,
 }
 
 .page a:hover,
-.page a:focus,
 .page input:hover,
+.page button:hover {
+  opacity: 0.8;
+}
+
+.page a:focus,
 .page input:focus,
-.page button:hover,
 .page button:focus {
   outline: auto;
   outline-color: #80eeff;
+}
+
+.page a:active,
+.page input:active,
+.page button:active {
+  opacity: 0.4;
+}
+
+.page a:disabled,
+.page input:disabled,
+.page button:disabled {
+  opacity: 0.1;
 }
 
 .header {
@@ -1401,15 +1416,6 @@ input[type="checkbox"] + label::before {
   padding: 50px 93px 50px 103px;
 }
 
-.footer a:hover,
-.footer a:focus {
-  opacity: 0.8;
-}
-
-.footer a:active {
-  color: #d4e4f4;
-}
-
 .footer__logo {
   margin-right: 40px;
 }
@@ -1567,6 +1573,13 @@ input[type="checkbox"] + label::before {
   .section__title2 {
     font-size: 26px;
     line-height: 36px;
+  }
+
+  .page a:hover,
+  .page input:hover,
+  .page button:hover {
+    outline: auto;
+    outline-color: #80eeff;
   }
 
   .header {
@@ -1863,6 +1876,12 @@ input[type="checkbox"] + label::before {
 
   .modal--fit-content .modal__content {
     width: 100%;
+  }
+
+  .page a:hover,
+  .page input:hover,
+  .page button:hover {
+    outline: none;
   }
 
   .header {
