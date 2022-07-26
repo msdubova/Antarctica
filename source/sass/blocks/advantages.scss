@@ -61,6 +61,7 @@
 }
 
 .advantages__list {
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
 
@@ -78,6 +79,7 @@
   padding: 62px 30px 23px 30px;
 
   background-color: $color-base-white;
+  margin-bottom: 20px;
 
   @include vp-1023 {
     width: 30.6%;

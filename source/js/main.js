@@ -1,24 +1,21 @@
-// import {iosVhFix} from './utils/ios-vh-fix';
-// import {initModals} from './modules/modals/init-modals';
+import {menuOpen} from './vendor.js';
 
-// // ---------------------------------
+// ---------------------------------
 
-// window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded', () => {
 
-//   // Utils
-//   // ---------------------------------
+  // Utils
+  // ---------------------------------
 
-//   iosVhFix();
+  // Modules
+  // ---------------------------------
 
-//   // Modules
-//   // ---------------------------------
-
-//   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
-//   // в load следует добавить скрипты, не участвующие в работе первого экрана
-//   window.addEventListener('load', () => {
-//     initModals();
-//   });
-// });
+  // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
+  // в load следует добавить скрипты, не участвующие в работе первого экрана
+  window.addEventListener('load', () => {
+    menuOpen();
+  });
+});
 
 // // ---------------------------------
 
@@ -44,16 +41,3 @@
 // // breakpointChecker();
 
 // // используйте .closest(el)
-
-let burgerButton = document.querySelector('.header__toggle');
-let burgerNav = document.querySelector('.header__nav');
-let burgerParent = document.querySelector('.header__container');
-
-burgerButton.addEventListener('click', function () {
-  burgerNav.classList.toggle('header__nav--opened');
-  burgerNav.classList.toggle('header__nav--closed');
-  burgerButton.classList.toggle('header__toggle--close');
-  burgerButton.classList.toggle('header__toggle--open');
-  burgerParent.classList.toggle('header__container--hidden');
-})
-;
