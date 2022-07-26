@@ -49,7 +49,6 @@ function menuOpen() {
     body.classList.remove('scroll-off');
   }
 
-
   navButton.addEventListener('click', function () {
 
     navMenuOpen();

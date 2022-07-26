@@ -11,23 +11,7 @@
   color: $color-default-black;
 
   scroll-behavior: smooth;
-
-  // @media screen and (min-width: $tablet) {
-  //   min-width: $tablet;
-  // }
-
-  // @media screen and (min-width: $desktop) {
-  //   min-width: $desktop;
-  // }
 }
-
-// .page *:disabled {
-//   opacity: 0.3;
-// }
-
-// .page *:focus {
-//   outline: $color-bg-advantages solid;
-// }
 
 .page a,
 .page input,
@@ -58,13 +42,3 @@
     opacity: 0.1;
   }
 }
-// .page__body {
-//   min-height: 100%;
-
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 14px;
-//   line-height: 20px;
-//   font-family: "Montserrat", "Arial", sans-serif;
-//   color: $color-base-black;
-// }

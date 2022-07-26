@@ -40,7 +40,6 @@
 }
 
 .header__container {
-  // height: 100vh;
   @include vp-1023 {
     height: auto;
   }
