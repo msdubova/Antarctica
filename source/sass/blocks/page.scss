@@ -21,6 +21,23 @@
   // }
 }
 
+// .page *:disabled {
+//   opacity: 0.3;
+// }
+
+// .page *:focus {
+//   outline: $color-bg-advantages solid;
+// }
+
+.page a,
+.page input,
+.page button   {
+  &:hover,
+  &:focus {
+    outline: auto;
+    outline-color: $color-outline;
+  }
+}
 // .page__body {
 //   min-height: 100%;
 

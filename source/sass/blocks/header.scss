@@ -4,10 +4,9 @@
   color: $color-base-white;
 
   background-color: $color-bg-header;
-
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: bottom;
+  background-size: cover;
   box-shadow: (0 4px 4px rgba(0, 0, 0, 0.25));
 
   @include vp-1024 {
@@ -17,17 +16,16 @@
       background-image: url("../../img/header-bg-desktop@2x.webp");
     }
   }
-
   @include vp-1023 {
     min-height: 638px;
-    box-shadow: none;
+
     background-image: url("../../img/header-bg-tablet@1x.webp");
+    box-shadow: none;
 
     @include retina () {
       background-image: url("../../img/header-bg-tablet@2x.webp");
     }
   }
-
   @include vp-767 {
     min-height: 500px;
 
@@ -41,12 +39,9 @@
 
 .header__container {
   // height: 100vh;
-
-
   @include vp-1023 {
     height: auto;
   }
-
   @include vp-767 {
     &--hidden {
       padding-left: 35px;
@@ -112,8 +107,17 @@
       width: calc(100% + 15px);
       height: 100vh;
       padding: 75px 30px 30px 15px;
+      overflow: scroll;
 
       background-color: $color-default-white;
+
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
     }
   }
 }
@@ -124,7 +128,6 @@
   margin-left: auto;
 
   @include reset-ul();
-
   @include vp-767 {
     position: relative;
 
@@ -149,7 +152,6 @@
   @include vp-1023 {
     margin-left: 23px;
   }
-
   @include vp-767 {
     margin-left: 0;
     padding: 10px 10px 18px 10px;
@@ -168,7 +170,6 @@
     font-size: 14px;
     line-height: 17px;
   }
-
   @include vp-767 {
     font-size: 18px;
     line-height: 22px;
@@ -191,7 +192,6 @@
   @include vp-1023 {
     margin-top: 217px;
   }
-
   @include vp-767 {
     margin-top: 134px;
   }
@@ -210,7 +210,6 @@
     font-size: 18px;
     line-height: 22px;
   }
-
   @include vp-767 {
     width: 70%;
 

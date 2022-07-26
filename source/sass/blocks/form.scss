@@ -11,6 +11,10 @@
   }
 }
 
+.form * {
+  user-select: none;
+}
+
 .form fieldset {
   display: flex;
   flex-direction: column;
@@ -41,6 +45,11 @@
   @include vp-767 {
     margin-bottom: 20px;
   }
+
+  &:focus-within {
+    outline: auto;
+    outline-color: $color-outline;
+  }
 }
 
 .form input {
@@ -57,6 +66,13 @@
   &::placeholder {
     color: $color-placeholder;
   }
+
+
+  &:hover,
+  &:focus {
+outline: auto;
+    outline-color: $color-outline;
+  }
 }
 
 .form input[type="checkbox"] {
@@ -64,15 +80,17 @@
 }
 
 input[type="checkbox"] + label {
+
+
   position: relative;
 
   display: inline-block;
-  vertical-align: middle;
   padding-left: 24px;
 
   font-weight: 400;
   font-size: 10px;
   line-height: 13px;
+  vertical-align: middle;
 
   @include vp-767 {
     padding-left: 28px;
@@ -102,7 +120,6 @@ input[type="checkbox"] + label {
     @include vp-1023 {
       top: -5px;
     }
-
     @include vp-767 {
       top: 0;
     }
@@ -126,7 +143,6 @@ input[type="checkbox"] + label {
     @include vp-1023 {
       top: -5px;
     }
-
     @include vp-767 {
       top: 0;
 
