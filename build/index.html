@@ -18,37 +18,34 @@
   <header class="header section">
     <div class="container header__container">
       <div class="header__top header__top--nojs">
-        <a class="header__logo">
-          <picture>
-            <source media="(max-width:767px)" width="42" height="22" srcset="img/svg/logo-antarctica.svg">
-            <source media="(max-width: 1023px)" width="38" height="20" srcset="img/svg/logo-antarctica.svg">
-            <img width="70" height="38" src="img/svg/logo-antarctica.svg"
-              alt="Логотип сервиса по продаже круизов в Антарктику">
-          </picture>
+        <a class="header__logo logo">
+          <svg width="70" height="38" alt="Логотип сервиса по продаже круизов в Антарктику">
+            <use xlink:href="img/sprite_auto.svg#logo-antarctica"></use>
+          </svg>
         </a>
         <button class="header__toggle header__toggle--nojs">
           <span class="visually-hidden">
             Открыть меню навигации
           </span>
         </button>
-        <nav class="header__nav header__nav--nojs">
+        <nav class="header__nav nav nav--nojs">
           <ul>
-            <li class="header_nav__item">
+            <li class="nav__item">
               <a href="#advantages">
                 Преимущества
               </a>
             </li>
-            <li class="header_nav__item">
+            <li class="nav__item">
               <a href="#">
                 Направления
               </a>
             </li>
-            <li class="header_nav__item">
+            <li class="nav__item">
               <a href="#catalog">
                 Ближайшие круизы
               </a>
             </li>
-            <li class="header_nav__item">
+            <li class="nav__item">
               <a href="#contacts">
                 Контакты
               </a>
@@ -57,7 +54,7 @@
         </nav>
       </div>
       <div class="header__promo">
-        <h1 class="section__title1">
+        <h1 class="section__title--high">
           Круизы в&nbsp;Антарктику
         </h1>
         <p>
@@ -70,7 +67,7 @@
     <section class="promo section">
       <div class="promo__container container">
         <div class="promo__info">
-          <h2 class="section__title2">
+          <h2 class="section__title--medium">
             Путешествие на&nbsp;край Земли
           </h2>
           <p>
@@ -103,12 +100,12 @@
     </section>
     <section class="advantages section" id="advantages">
       <div class="advantages__container container">
-        <h2 class="section__title2">
+        <h2 class="section__title--medium">
           Преимущества
         </h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--vip">
-            <h3 class="section__title3">
+            <h3 class="section__title--low">
               Небольшой круизный лайнер
             </h3>
             <p>
@@ -119,7 +116,7 @@
             </p>
           </li>
           <li class="advantages__item advantages__item--allincluded">
-            <h3 class="section__title3">
+            <h3 class="section__title--low">
               Система все&nbsp;включено
             </h3>
             <p>
@@ -129,7 +126,7 @@
             </p>
           </li>
           <li class="advantages__item advantages__item--zodiac">
-            <h3 class="section__title3">
+            <h3 class="section__title--low">
               Экскурсионные туры на&nbsp;Zodiac
             </h3>
             <p>
@@ -143,12 +140,12 @@
     </section>
     <section class="catalog section" id="catalog">
       <div class="catalog__container container">
-        <h2 class="section__title2">
+        <h2 class="section__title--medium">
           Ближайшие круизы
         </h2>
         <ul class="catalog__list">
           <li class="catalog__item" tabindex="0">
-            <div class="catalog_item__picture">
+            <div class="catalog__picture">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)"
                   srcset="img/catalog/cruiz-astoria-mobile@2x.webp 2x, img/catalog/cruiz-astoria-mobile@1x.webp">
@@ -165,10 +162,10 @@
                   src="img/catalog/cruiz-astoria-desktop@1x.png" alt="Изображение круиза Астория" loading="lazy">
               </picture>
             </div>
-            <h3 class="section__title3">
+            <h3 class="section__title--low">
               Круиз “Астория”
             </h3>
-            <div class="catalog_item__description">
+            <div class="catalog__description">
               <dl>
                 <dt>Маршрут</dt>
                 <dd>Аргентина - Фолклендские острова - Антарктида - Чили</dd>
@@ -179,14 +176,13 @@
                 <dt>Цена</dt>
                 <dd>от 11500 $</dd>
               </dl>
-              <button class="catalog__button button" type="button" tabindex="-1">
-                <span class="visually-hidden">Забронировать</span>
+              <a class="catalog__button button" href="#" tabindex="-1">
                 Забронировать
-              </button>
+              </a>
             </div>
           </li>
           <li class="catalog__item" tabindex="0">
-            <div class="catalog_item__picture">
+            <div class="catalog__picture">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)"
                   srcset="img/catalog/cruiz-astoria-mobile@2x.webp 2x, img/catalog/cruiz-astoria-mobile@1x.webp">
@@ -203,10 +199,10 @@
                   src="img/catalog/cruiz-astoria-desktop@1x.png" alt="Изображение круиза Элайн" loading="lazy">
               </picture>
             </div>
-            <h3 class="section__title3">
+            <h3 class="section__title--low">
               Круиз “Элайн”
             </h3>
-            <div class="catalog_item__description">
+            <div class="catalog__description">
               <dl>
                 <dt>Маршрут</dt>
                 <dd>Аргентина - Фолклендские острова - Антарктида - Чили</dd>
@@ -217,14 +213,13 @@
                 <dt>Цена</dt>
                 <dd>от 14500 $</dd>
               </dl>
-              <button class="catalog__button button" type="button" tabindex="-1">
-                <span class="visually-hidden">забронировать</span>
+              <a class="catalog__button button" href="#" tabindex="-1">
                 Забронировать
-              </button>
+              </a>
             </div>
           </li>
           <li class="catalog__item" tabindex="0">
-            <div class="catalog_item__picture">
+            <div class="catalog__picture">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)"
                   srcset="img/catalog/cruiz-atlantis-mobile@2x.webp 2x, img/catalog/cruiz-atlantis-mobile@1x.webp">
@@ -241,10 +236,10 @@
                   src="img/catalog/cruiz-atlantis-desktop@1x.png" alt="Изображение круиза Атлантис" loading="lazy">
               </picture>
             </div>
-            <h3 class="section__title3">
+            <h3 class="section__title--low">
               Круиз “Атлантис”
             </h3>
-            <div class="catalog_item__description">
+            <div class="catalog__description">
               <dl>
                 <dt>Маршрут</dt>
                 <dd>Аргентина - Южная Георгия и Южные Сандвичевы Острова - Антарктида</dd>
@@ -255,14 +250,13 @@
                 <dt>Цена</dt>
                 <dd>от 14500 $</dd>
               </dl>
-              <button class="catalog__button button" type="button" tabindex="-1">
-                <span class="visually-hidden">забронировать</span>
+              <a class="catalog__button button" href="#" tabindex="-1">
                 Забронировать
-              </button>
+              </a>
             </div>
           </li>
           <li class="catalog__item" tabindex="0">
-            <div class="catalog_item__picture">
+            <div class="catalog__picture">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)"
                   srcset="img/catalog/cruiz-odissey-mobile@2x.webp 2x, img/catalog/cruiz-odissey-mobile@1x.webp">
@@ -279,10 +273,10 @@
                   src="img/catalog/cruiz-odissey-desktop@1x.png" alt="Изображение круиза Одиссей" loading="lazy">
               </picture>
             </div>
-            <h3 class="section__title3">
+            <h3 class="section__title--low">
               Круиз “Одиссей”
             </h3>
-            <div class="catalog_item__description">
+            <div class="catalog__description">
               <dl>
                 <dt>Маршрут</dt>
                 <dd>Чили - Антарктида</dd>
@@ -293,14 +287,13 @@
                 <dt>Цена</dt>
                 <dd>от 9700 $</dd>
               </dl>
-              <button class="catalog__button button" type="button" tabindex="-1">
-                <span class="visually-hidden">забронировать</span>
+              <a class="catalog__button button" href="#" tabindex="-1">
                 Забронировать
-              </button>
+              </a>
             </div>
           </li>
           <li class="catalog__item" tabindex="0">
-            <div class="catalog_item__picture">
+            <div class="catalog__picture">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)"
                   srcset="img/catalog/cruiz-olimpia-mobile@2x.webp 2x, img/catalog/cruiz-olimpia-mobile@1x.webp">
@@ -317,10 +310,10 @@
                   src="img/catalog/cruiz-olimpia-desktop@1x.png" alt="Изображение круиза Олимпиа" loading="lazy">
               </picture>
             </div>
-            <h3 class="section__title3">
+            <h3 class="section__title--low">
               Круиз “Олимпия”
             </h3>
-            <div class="catalog_item__description">
+            <div class="catalog__description">
               <dl>
                 <dt>Маршрут</dt>
                 <dd>Аргентина - Фолклендские острова - Южная Георгия - Антарктида</dd>
@@ -331,14 +324,13 @@
                 <dt>Цена</dt>
                 <dd>от 18600 $</dd>
               </dl>
-              <button class="catalog__button button" type="button" tabindex="-1">
-                <span class="visually-hidden">забронировать</span>
+              <a class="catalog__button button" href="#" tabindex="-1">
                 Забронировать
-              </button>
+              </a>
             </div>
           </li>
           <li class="catalog__item" tabindex="0">
-            <div class="catalog_item__picture">
+            <div class="catalog__picture">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)"
                   srcset="img/catalog/cruiz-avrora-mobile@2x.webp 2x, img/catalog/cruiz-avrora-mobile@1x.webp">
@@ -355,10 +347,10 @@
                   src="img/catalog/cruiz-avrora-desktop@1x.png" alt="Изображение круиза Аврора" loading="lazy">
               </picture>
             </div>
-            <h3 class="section__title3">
+            <h3 class="section__title--low">
               Круиз “Аврора”
             </h3>
-            <div class="catalog_item__description">
+            <div class="catalog__description">
               <dl>
                 <dt>Маршрут</dt>
                 <dd>Аргентина - Антарктида - Чили</dd>
@@ -369,14 +361,13 @@
                 <dt>Цена</dt>
                 <dd>от 11700 $</dd>
               </dl>
-              <button class="catalog__button button" type="button" tabindex="-1">
-                <span class="visually-hidden">забронировать</span>
+              <a class="catalog__button button" href="#" tabindex="-1">
                 Забронировать
-              </button>
+              </a>
             </div>
           </li>
           <li class="catalog__item" tabindex="0">
-            <div class="catalog_item__picture">
+            <div class="catalog__picture">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)"
                   srcset="img/catalog/cruiz-leonor-mobile@2x.webp 2x, img/catalog/cruiz-leonor-mobile@1x.webp">
@@ -393,10 +384,10 @@
                   src="img/catalog/cruiz-leonor-desktop@1x.png" alt="Изображение круиза Леонор" loading="lazy">
               </picture>
             </div>
-            <h3 class="section__title3">
+            <h3 class="section__title--low">
               Круиз “Леонор”
             </h3>
-            <div class="catalog_item__description">
+            <div class="catalog__description">
               <dl>
                 <dt>Маршрут</dt>
                 <dd>Чили - Южная Георгия - Антарктида - Аргентина</dd>
@@ -407,14 +398,13 @@
                 <dt>Цена</dt>
                 <dd>от 12500 $</dd>
               </dl>
-              <button class="catalog__button button" type="button" tabindex="-1">
-                <span class="visually-hidden">забронировать</span>
+              <a class="catalog__button button" href="#" tabindex="-1">
                 Забронировать
-              </button>
+              </a>
             </div>
           </li>
           <li class="catalog__item" tabindex="0">
-            <div class="catalog_item__picture">
+            <div class="catalog__picture">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)"
                   srcset="img/catalog/cruiz-minion-mobile@2x.webp 2x, img/catalog/cruiz-minion-mobile@1x.webp">
@@ -431,10 +421,10 @@
                   src="img/catalog/cruiz-minion-desktop@1x.png" alt="Изображение круиза Минион-1" loading="lazy">
               </picture>
             </div>
-            <h3 class="section__title3">
+            <h3 class="section__title--low">
               Круиз “Минион - 1”
             </h3>
-            <div class="catalog_item__description">
+            <div class="catalog__description">
               <dl>
                 <dt>Маршрут</dt>
                 <dd>Аргентина - Антарктида</dd>
@@ -445,10 +435,9 @@
                 <dt>Цена</dt>
                 <dd>от 12300 $</dd>
               </dl>
-              <button class="catalog__button button" type="button" tabindex="-1">
-                <span class="visually-hidden">забронировать</span>
+              <a class="catalog__button button" href="#" tabindex="-1">
                 Забронировать
-              </button>
+              </a>
             </div>
           </li>
         </ul>
@@ -457,7 +446,7 @@
     <section class="reservation section">
       <div class="reservation__container container">
         <div class="reservation__info">
-          <h2 class="section__title2">
+          <h2 class="section__title--medium">
             Раннее бронирование
           </h2>
           <p>
@@ -474,15 +463,15 @@
             </legend>
             <p>
               <input id="name" name="guest-name" type="text" required placeholder="Имя">
-              <label for="name" class="visually-hidden"></label>
+              <label for="name" class="visually-hidden">Введите имя</label>
             </p>
             <p>
               <input id="tel" name="guest-tel" type="tel" required placeholder="Телефон" pattern="[0-9]{11}">
-              <label for="tel" class="visually-hidden"></label>
+              <label for="tel" class="visually-hidden">Укажите номер телефона в формате 89000000000</label>
             </p>
             <p>
               <input id="mail" name="guest-mail" type="email" required placeholder="Email">
-              <label for="mail" class="visually-hidden"></label>
+              <label for="mail" class="visually-hidden">Укажите адрес электронной почты</label>
             </p>
             <p>
               <input type="checkbox" id="agreement" name="check-agreement" required checked>
@@ -512,7 +501,7 @@
           </iframe>
         </div>
         <div class="contacts__info">
-          <h3 class="section__title3">
+          <h3 class="section__title--low">
             У&nbsp;вас ещё остались вопросы или сомнения?
             Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.
           </h3>
@@ -529,39 +518,36 @@
   </main>
   <footer class="footer">
     <div class="footer__container container">
-      <a class="footer__logo">
-        <picture>
-          <source media="(max-width:767px)" width="42" height="22" srcset="img/svg/logo-antarctica.svg">
-          <source media="(max-width: 1365px)" width="38" height="20" srcset="img/svg/logo-antarctica.svg">
-          <img width="70" height="38" src="img/svg/logo-antarctica.svg"
-            alt="Логотип сервиса по продаже круизов в Антарктику">
-        </picture>
+      <a class="footer__logo logo">
+        <svg width="70" height="38" alt="Логотип сервиса по продаже круизов в Антарктику">
+          <use xlink:href="img/sprite_auto.svg#logo-antarctica"></use>
+        </svg>
       </a>
-      <ul class="footer__nav">
-        <li class="footer_nav__item">
+      <ul class="nav-footer">
+        <li class="nav-footer__item">
           <a href="#advantages">
             Преимущества
           </a>
         </li>
-        <li class="footer_nav__item">
+        <li class="nav-footer__item">
           <a href="#">
             Направления
           </a>
         </li>
-        <li class="footer_nav__item">
+        <li class="nav-footer__item">
           <a href="#catalog">
             Ближайшие круизы
           </a>
         </li>
-        <li class="footer_nav__item">
+        <li class="nav-footer__item">
           <a href="#contacts">
             Контакты
           </a>
         </li>
       </ul>
-      <ul class="footer__socials">
-        <li class="footer_socials__item">
-          <a href="#" class="footer_socials__link">
+      <ul class="footer__socials socials">
+        <li class="socials__item">
+          <a href="#" class="socials__link">
             <span class="visually-hidden">
               Ссылка на страницу агенства подбора круизов Антарктика в Facebook
             </span>
@@ -570,19 +556,18 @@
             </svg>
           </a>
         </li>
-        <li class="footer_socials__item">
-          <a href="#" class="footer_socials__link">
+        <li class="socials__item">
+          <a href="#" class="socials__link">
             <span class="visually-hidden">
               Ссылка на страницу агенства подбора круизов Антарктика в Instagram
             </span>
             <svg width="20" height="20">
-
               <use xlink:href="img/sprite_auto.svg#logo-instagram"></use>
             </svg>
           </a>
         </li>
-        <li class="footer_socials__item">
-          <a href="#" class="footer_socials__link">
+        <li class="socials__item">
+          <a href="#" class="socials__link">
             <span class="visually-hidden">
               Ссылка на страницу агенства подбора круизов Антарктика в Twitter
             </span>

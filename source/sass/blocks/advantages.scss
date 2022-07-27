@@ -78,7 +78,7 @@
   width: 31%;
   padding: 62px 30px 23px 30px;
 
-  background-color: $color-base-white;
+  background-color: $color-default-white;
   margin-bottom: 20px;
 
   @include vp-1023 {
@@ -114,7 +114,7 @@
 
   &--vip {
     &::before {
-      background-image: url("../../img/svg/icon-advantage1.svg");
+      background-image: url("../img/svg/icon-advantage1.svg");
 
       @include vp-1023 {
         left: 15px;
@@ -126,13 +126,13 @@
 
   &--allincluded {
     &::before {
-      background-image: url("../../img/svg/icon-advantage2.svg");
+      background-image: url("../img/svg/icon-advantage2.svg");
     }
   }
 
   &--zodiac {
     &::before {
-      background-image: url("../../img/svg/icon-advantage3.svg");
+      background-image: url("../img/svg/icon-advantage3.svg");
     }
   }
 }
