@@ -1,7 +1,7 @@
 .form {
   padding: 44px 48px;
 
-  color: $color-base-white;
+  color: $color-default-white;
 
   background-color: $color-bg-primary;
   border: none;
@@ -59,7 +59,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: $color-input;
+  color: $color-default-black;
 
   border: 0;
 
@@ -78,7 +78,7 @@
   @include visually-hidden();
 }
 
-input[type="checkbox"] + label {
+.form input[type="checkbox"] + label {
   position: relative;
 
   display: inline-block;
@@ -112,7 +112,7 @@ input[type="checkbox"] + label {
     width: 18px;
     height: 18px;
 
-    background-color: $color-base-white;
+    background-color: $color-default-white;
 
     @include vp-1023 {
       top: -5px;

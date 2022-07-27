@@ -436,7 +436,7 @@ html {
   font-size: 16px;
   line-height: 24px;
   font-family: "Placeholder", "Arial", sans-serif;
-  color: black;
+  color: #011c40;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -445,11 +445,11 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background-color: white;
+  background-color: #f9fbfd;
 }
 
 a {
-  color: black;
+  color: #011c40;
   text-decoration: none;
 }
 
@@ -465,9 +465,9 @@ textarea {
 }
 
 input:-webkit-autofill {
-  -webkit-box-shadow: inset 0 0 0 1000px white;
-  box-shadow: inset 0 0 0 1000px white;
-  -webkit-text-fill-color: black;
+  -webkit-box-shadow: inset 0 0 0 1000px #f9fbfd;
+  box-shadow: inset 0 0 0 1000px #f9fbfd;
+  -webkit-text-fill-color: #011c40;
 }
 
 input,
@@ -616,7 +616,7 @@ button,
   margin-bottom: 85px;
 }
 
-.section__title1 {
+.section__title--high {
   font-weight: 700;
   font-size: 54px;
   line-height: 66px;
@@ -624,7 +624,7 @@ button,
   letter-spacing: 0;
 }
 
-.section__title2 {
+.section__title--medium {
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
@@ -632,7 +632,7 @@ button,
   letter-spacing: 0;
 }
 
-.section__title3 {
+.section__title--low {
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -675,7 +675,7 @@ button,
   font-size: 14px;
   line-height: 20px;
   font-family: "Montserrat", "Arial", sans-serif;
-  color: black;
+  color: #011c40;
   scroll-behavior: smooth;
 }
 
@@ -732,31 +732,6 @@ button,
   cursor: pointer;
 }
 
-.header__nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-left: auto;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.header_nav__item {
-  margin-left: 33px;
-}
-
-.header_nav__item a {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: left;
-  color: white;
-  letter-spacing: 0;
-}
-
 .header__promo {
   padding: 0 95px;
 }
@@ -773,6 +748,38 @@ button,
   font-size: 20px;
   line-height: 24px;
   text-align: left;
+  letter-spacing: 0;
+}
+
+.logo svg {
+  display: inline-block;
+  vertical-align: top;
+  width: 70px;
+  height: 38px;
+}
+
+.nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__item {
+  margin-left: 33px;
+}
+
+.nav__item a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  color: #f9fbfd;
   letter-spacing: 0;
 }
 
@@ -810,6 +817,8 @@ button,
 
 .promo__image img {
   width: 100%;
+  min-width: 560px;
+  height: auto;
 }
 
 .advantages {
@@ -869,15 +878,15 @@ button,
 }
 
 .advantages__item--vip::before {
-  background-image: url("../../img/svg/icon-advantage1.svg");
+  background-image: url("../img/svg/icon-advantage1.svg");
 }
 
 .advantages__item--allincluded::before {
-  background-image: url("../../img/svg/icon-advantage2.svg");
+  background-image: url("../img/svg/icon-advantage2.svg");
 }
 
 .advantages__item--zodiac::before {
-  background-image: url("../../img/svg/icon-advantage3.svg");
+  background-image: url("../img/svg/icon-advantage3.svg");
 }
 
 .advantages__item h3 {
@@ -961,7 +970,7 @@ button,
   padding: 0;
 }
 
-.catalog_item__description {
+.catalog__description {
   z-index: 2;
   display: none;
   -webkit-box-flex: 1;
@@ -981,23 +990,23 @@ button,
   scrollbar-width: none;
 }
 
-.catalog_item__description::-webkit-scrollbar {
+.catalog__description::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
 
-.catalog_item__description dl {
+.catalog__description dl {
   margin: 0;
 }
 
-.catalog_item__description dt {
+.catalog__description dt {
   margin-bottom: 2px;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
 }
 
-.catalog_item__description dd {
+.catalog__description dd {
   margin: 0;
   margin-bottom: 10px;
   font-weight: 400;
@@ -1014,13 +1023,13 @@ button,
   line-height: 21px;
 }
 
-.catalog__item:hover .catalog_item__picture,
-.catalog__item:focus .catalog_item__picture {
+.catalog__item:hover .catalog__picture,
+.catalog__item:focus .catalog__picture {
   display: none;
 }
 
-.catalog__item:hover .catalog_item__description,
-.catalog__item:focus .catalog_item__description {
+.catalog__item:hover .catalog__description,
+.catalog__item:focus .catalog__description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1163,7 +1172,7 @@ button,
   clip-path: inset(100%);
 }
 
-input[type="checkbox"] + label {
+.form input[type="checkbox"] + label {
   position: relative;
   display: inline-block;
   padding-left: 24px;
@@ -1173,7 +1182,7 @@ input[type="checkbox"] + label {
   vertical-align: middle;
 }
 
-input[type="checkbox"] + label::before {
+.form input[type="checkbox"] + label::before {
   content: "";
   position: absolute;
   top: -5px;
@@ -1281,7 +1290,7 @@ input[type="checkbox"] + label::before {
   margin-right: 40px;
 }
 
-.footer__nav {
+.nav-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1292,7 +1301,7 @@ input[type="checkbox"] + label::before {
   list-style: none;
 }
 
-.footer_nav__item a {
+.nav-footer__item a {
   margin-right: 33px;
   font-weight: 500;
   font-size: 16px;
@@ -1300,7 +1309,7 @@ input[type="checkbox"] + label::before {
   color: #f9fbfd;
 }
 
-.footer__socials {
+.socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1317,7 +1326,7 @@ input[type="checkbox"] + label::before {
   list-style: none;
 }
 
-.footer__socials .footer_socials__item {
+.socials__item {
   display: inline-block;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1327,16 +1336,16 @@ input[type="checkbox"] + label::before {
   vertical-align: middle;
 }
 
-.footer__socials .footer_socials__item:nth-child(3n) {
+.socials__item:nth-child(3n) {
   margin-right: 0;
 }
 
-.footer__socials .footer_socials__link {
+.socials__link {
   padding: 7px;
   padding-left: 0;
 }
 
-.footer__socials .footer_socials__link svg {
+.socials__link svg {
   width: 20px;
   height: 20px;
   vertical-align: middle;
@@ -1370,7 +1379,7 @@ input[type="checkbox"] + label::before {
     background-image: url("../../img/reservation-bg-desktop@1x.webp");
   }
 
-  .footer__socials {
+  .socials {
     margin-left: auto;
   }
 }
@@ -1426,12 +1435,12 @@ input[type="checkbox"] + label::before {
     margin-bottom: 65px;
   }
 
-  .section__title1 {
+  .section__title--high {
     font-size: 50px;
     line-height: 61px;
   }
 
-  .section__title2 {
+  .section__title--medium {
     font-size: 26px;
     line-height: 36px;
   }
@@ -1454,15 +1463,6 @@ input[type="checkbox"] + label::before {
     height: auto;
   }
 
-  .header_nav__item {
-    margin-left: 23px;
-  }
-
-  .header_nav__item a {
-    font-size: 14px;
-    line-height: 17px;
-  }
-
   .header__promo {
     padding: 0;
   }
@@ -1475,6 +1475,20 @@ input[type="checkbox"] + label::before {
   .header__promo p {
     font-size: 18px;
     line-height: 22px;
+  }
+
+  .logo svg {
+    width: 38px;
+    height: 20px;
+  }
+
+  .nav__item {
+    margin-left: 23px;
+  }
+
+  .nav__item a {
+    font-size: 14px;
+    line-height: 17px;
   }
 
   .promo {
@@ -1497,6 +1511,10 @@ input[type="checkbox"] + label::before {
     width: 324px;
     margin-top: 10px;
     margin-left: 0;
+  }
+
+  .promo__image img {
+    min-width: 324px;
   }
 
   .advantages {
@@ -1612,7 +1630,7 @@ input[type="checkbox"] + label::before {
     text-align: center;
   }
 
-  input[type="checkbox"] + label::before {
+  .form input[type="checkbox"] + label::before {
     top: -5px;
   }
 
@@ -1656,33 +1674,33 @@ input[type="checkbox"] + label::before {
     margin-right: 25px;
   }
 
-  .footer_nav__item {
+  .nav-footer__item {
     padding: 20px 0;
   }
 
-  .footer_nav__item a {
+  .nav-footer__item a {
     margin-right: 23px;
     padding: 20px 0;
     font-size: 12px;
     line-height: 15px;
   }
 
-  .footer__socials {
+  .socials {
     width: 93px;
     margin-left: auto;
   }
 
-  .footer__socials .footer_socials__item {
+  .socials__item {
     padding-top: 0;
     padding-left: 2px;
   }
 
-  .footer__socials .footer_socials__link {
+  .socials__link {
     padding: 3px;
     padding-left: 0;
   }
 
-  .footer__socials .footer_socials__link svg {
+  .socials__link svg {
     width: 16px;
     height: 16px;
   }
@@ -1716,12 +1734,12 @@ input[type="checkbox"] + label::before {
     margin-bottom: 45px;
   }
 
-  .section__title1 {
+  .section__title--high {
     font-size: 36px;
     line-height: 45px;
   }
 
-  .section__title2 {
+  .section__title--medium {
     font-size: 24px;
     line-height: 34px;
   }
@@ -1785,11 +1803,26 @@ input[type="checkbox"] + label::before {
     display: none;
   }
 
-  .header__nav--closed {
+  .header h1 {
+    margin-top: 134px;
+  }
+
+  .header__promo p {
+    width: 70%;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .logo svg {
+    width: 42px;
+    height: 22px;
+  }
+
+  .nav--closed {
     display: none;
   }
 
-  .header__nav--opened {
+  .nav--opened {
     position: absolute;
     top: -20px;
     left: 0;
@@ -1798,17 +1831,17 @@ input[type="checkbox"] + label::before {
     height: 100vh;
     padding: 75px 30px 30px 15px;
     overflow: scroll;
-    background-color: white;
+    background-color: #f9fbfd;
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
 
-  .header__nav--opened::-webkit-scrollbar {
+  .nav--opened::-webkit-scrollbar {
     width: 0;
     height: 0;
   }
 
-  .header__nav--nojs {
+  .nav--nojs {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1818,7 +1851,7 @@ input[type="checkbox"] + label::before {
     width: 100%;
   }
 
-  .header__nav--nojs ul {
+  .nav--nojs ul {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -1827,17 +1860,17 @@ input[type="checkbox"] + label::before {
     margin-bottom: 20px;
   }
 
-  .header__nav--nojs ul * {
+  .nav--nojs ul * {
     width: 100%;
     margin-bottom: 3px;
     background-color: #f9fbfd;
   }
 
-  .header__nav--nojs ul::before {
+  .nav--nojs ul::before {
     display: none;
   }
 
-  .header__nav ul {
+  .nav ul {
     position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1845,7 +1878,7 @@ input[type="checkbox"] + label::before {
     flex-direction: column;
   }
 
-  .header__nav ul::before {
+  .nav ul::before {
     content: "";
     position: absolute;
     top: -55px;
@@ -1854,25 +1887,15 @@ input[type="checkbox"] + label::before {
     background-image: url("../../img/svg/logo-antarctica--nav.svg");
   }
 
-  .header_nav__item {
+  .nav__item {
     margin-left: 0;
     padding: 10px 10px 18px 10px;
   }
 
-  .header_nav__item a {
+  .nav__item a {
     font-size: 18px;
     line-height: 22px;
-    color: black;
-  }
-
-  .header h1 {
-    margin-top: 134px;
-  }
-
-  .header__promo p {
-    width: 70%;
-    font-weight: 400;
-    font-size: 16px;
+    color: #011c40;
   }
 
   .promo__container {
@@ -1897,6 +1920,10 @@ input[type="checkbox"] + label::before {
 
   .promo__image {
     width: 100%;
+  }
+
+  .promo__image img {
+    min-width: 290px;
   }
 
   .advantages {
@@ -2025,19 +2052,19 @@ input[type="checkbox"] + label::before {
     margin-bottom: 20px;
   }
 
-  input[type="checkbox"] + label {
+  .form input[type="checkbox"] + label {
     padding-left: 28px;
     font-weight: 400;
     font-size: 10px;
     line-height: 12px;
   }
 
-  input[type="checkbox"] + label::before {
+  .form input[type="checkbox"] + label::before {
     width: 20px;
     height: 20px;
   }
 
-  input[type="checkbox"] + label::before {
+  .form input[type="checkbox"] + label::before {
     top: 0;
   }
 
@@ -2094,7 +2121,7 @@ input[type="checkbox"] + label::before {
     margin-bottom: 18px;
   }
 
-  .footer__nav {
+  .nav-footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2102,17 +2129,17 @@ input[type="checkbox"] + label::before {
     width: 100%;
   }
 
-  .footer_nav__item {
+  .nav-footer__item {
     margin-bottom: 0;
     padding: 6px 0;
   }
 
-  .footer_nav__item a {
+  .nav-footer__item a {
     height: 100%;
     margin-right: 0;
   }
 
-  .footer__socials {
+  .socials {
     width: 90px;
     min-height: auto;
     margin-top: 15px;
@@ -2120,7 +2147,7 @@ input[type="checkbox"] + label::before {
     margin-left: 0;
   }
 
-  .footer__socials .footer_socials__item {
+  .socials__item {
     padding-left: 0;
   }
 }

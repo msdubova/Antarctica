@@ -67,7 +67,17 @@
   }
 }
 
-
 .promo__image img {
   width: 100%;
+  min-width: 560px;
+  height: auto;
+
+  @include vp-1023 {
+    min-width: 324px;
+    // width: auto;
+  }
+
+  @include vp-767 {
+    min-width: 290px;
+  }
 }

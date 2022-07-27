@@ -19,9 +19,11 @@
 // Blocks
 // ---------------------------------
 
-@import "blocks/btn";
+@import "blocks/button";
 @import "blocks/page";
 @import "blocks/header";
+@import "blocks/logo.scss";
+@import "blocks/nav.scss";
 @import "blocks/promo";
 @import "blocks/advantages";
 @import "blocks/catalog";
@@ -29,6 +31,8 @@
 @import "blocks/form";
 @import "blocks/contacts";
 @import "blocks/footer";
+@import "blocks/nav-footer";
+@import "blocks/socials";
 
 // ---------------------------------
 
