@@ -7,10 +7,10 @@
   background-size: cover;
 
   @include vp-1024 {
-    background-image: url("../../img/advantages-bg-desktop@1x.webp");
+    background-image: url("../img/advantages-bg-desktop@1x.webp");
 
     @include retina () {
-      background-image: url("../../img/advantages-bg-desktop@2x.webp");
+      background-image: url("../img/advantages-bg-desktop@2x.webp");
     }
   }
 
@@ -18,10 +18,10 @@
     min-height: 588px;
     padding-top: 54px;
 
-    background-image: url("../../img/advantages-bg-tablet@1x.webp");
+    background-image: url("../img/advantages-bg-tablet@1x.webp");
 
     @include retina () {
-      background-image: url("../../img/advantages-bg-tablet@2x.webp");
+      background-image: url("../img/advantages-bg-tablet@2x.webp");
     }
   }
 
@@ -29,10 +29,10 @@
     padding-top: 38px;
     padding-bottom: 15px;
 
-    background-image: url("../../img/advantages-bg-mobile@1x.webp");
+    background-image: url("../img/advantages-bg-mobile@1x.webp");
 
     @include retina () {
-      background-image: url("../../img/advantages-bg-mobile@2x.webp");
+      background-image: url("../img/advantages-bg-mobile@2x.webp");
     }
   }
 }

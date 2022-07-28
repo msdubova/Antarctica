@@ -52,12 +52,12 @@
 }
 
 .promo__image {
-  width: 565px;
+  width: 49%;
   margin-left: 50px;
   background-color: $color-bg-header;
 
   @include vp-1023 {
-    width: 324px;
+    width: 48%;
     margin-top: 10px;
     margin-left: 0;
   }
@@ -69,15 +69,5 @@
 
 .promo__image img {
   width: 100%;
-  min-width: 560px;
   height: auto;
-
-  @include vp-1023 {
-    min-width: 324px;
-    // width: auto;
-  }
-
-  @include vp-767 {
-    min-width: 290px;
-  }
 }

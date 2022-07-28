@@ -1,0 +1,11 @@
+.section {
+  margin-bottom: 85px;
+
+  @include vp-1023 {
+    margin-bottom: 65px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 45px;
+  }
+}
