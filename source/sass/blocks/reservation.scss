@@ -8,20 +8,20 @@
 
 
   @include vp-1024 {
-    background-image: url("../../img/reservation-bg-desktop@1x.webp");
+    background-image: url("../img/reservation-bg-desktop@1x.webp");
 
     @include retina () {
-      background-image: url("../../img/reservation-bg-desktop@2x.webp");
+      background-image: url("../img/reservation-bg-desktop@2x.webp");
     }
   }
 
   @include vp-1023 {
     min-height: 805px;
 
-    background-image: url("../../img/reservation-bg-tablet@1x.webp");
+    background-image: url("../img/reservation-bg-tablet@1x.webp");
 
     @include retina () {
-      background-image: url("../../img/reservation-bg-tablet@2x.webp");
+      background-image: url("../img/reservation-bg-tablet@2x.webp");
     }
   }
 
@@ -29,10 +29,10 @@
     min-height: 760px;
     margin-bottom: 40px;
 
-    background-image: url("../../img/reservation-bg-mobile@1x.webp");
+    background-image: url("../img/reservation-bg-mobile@1x.webp");
 
     @include retina () {
-      background-image: url("../../img/reservation-bg-mobile@2x.webp");
+      background-image: url("../img/reservation-bg-mobile@2x.webp");
     }
   }
 }

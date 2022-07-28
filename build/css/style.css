@@ -616,7 +616,7 @@ button,
   margin-bottom: 85px;
 }
 
-.section__title--high {
+.title--h1 {
   font-weight: 700;
   font-size: 54px;
   line-height: 66px;
@@ -624,7 +624,7 @@ button,
   letter-spacing: 0;
 }
 
-.section__title--medium {
+.title--h2 {
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
@@ -632,7 +632,7 @@ button,
   letter-spacing: 0;
 }
 
-.section__title--low {
+.title--h3 {
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -810,14 +810,13 @@ button,
 }
 
 .promo__image {
-  width: 565px;
+  width: 49%;
   margin-left: 50px;
   background-color: #437cb8;
 }
 
 .promo__image img {
   width: 100%;
-  min-width: 560px;
   height: auto;
 }
 
@@ -1199,7 +1198,7 @@ button,
   left: 0;
   width: 18px;
   height: 18px;
-  background-image: url("../../img/svg/check.svg");
+  background-image: url("../img/svg/check.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1235,7 +1234,7 @@ button,
   width: 100%;
   height: 306px;
   background-color: #e0c29c;
-  background-image: url("../../img/map/map-desktop-1x.webp");
+  background-image: url("../img/map/map-desktop-1x.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1262,11 +1261,11 @@ button,
 .contacts__item--adress {
   margin-bottom: 20px;
   font-style: normal;
-  background-image: url("../../img/svg/icon-pin.svg");
+  background-image: url("../img/svg/icon-pin.svg");
 }
 
 .contacts__item--tel {
-  background-image: url("../../img/svg/icon-tel.svg");
+  background-image: url("../img/svg/icon-tel.svg");
 }
 
 .footer {
@@ -1368,15 +1367,15 @@ button,
 
 @media (min-width: 1024px) {
   .header {
-    background-image: url("../../img/header-bg-desktop@1x.webp");
+    background-image: url("../img/header-bg-desktop@1x.webp");
   }
 
   .advantages {
-    background-image: url("../../img/advantages-bg-desktop@1x.webp");
+    background-image: url("../img/advantages-bg-desktop@1x.webp");
   }
 
   .reservation {
-    background-image: url("../../img/reservation-bg-desktop@1x.webp");
+    background-image: url("../img/reservation-bg-desktop@1x.webp");
   }
 
   .socials {
@@ -1386,15 +1385,15 @@ button,
 
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1024px) and (min-resolution: 144dpi), (min-width: 1024px) and (min-resolution: 1.5dppx) {
   .header {
-    background-image: url("../../img/header-bg-desktop@2x.webp");
+    background-image: url("../img/header-bg-desktop@2x.webp");
   }
 
   .advantages {
-    background-image: url("../../img/advantages-bg-desktop@2x.webp");
+    background-image: url("../img/advantages-bg-desktop@2x.webp");
   }
 
   .reservation {
-    background-image: url("../../img/reservation-bg-desktop@2x.webp");
+    background-image: url("../img/reservation-bg-desktop@2x.webp");
   }
 }
 
@@ -1435,12 +1434,12 @@ button,
     margin-bottom: 65px;
   }
 
-  .section__title--high {
+  .title--h1 {
     font-size: 50px;
     line-height: 61px;
   }
 
-  .section__title--medium {
+  .title--h2 {
     font-size: 26px;
     line-height: 36px;
   }
@@ -1454,7 +1453,7 @@ button,
 
   .header {
     min-height: 638px;
-    background-image: url("../../img/header-bg-tablet@1x.webp");
+    background-image: url("../img/header-bg-tablet@1x.webp");
     -webkit-box-shadow: none;
     box-shadow: none;
   }
@@ -1508,19 +1507,15 @@ button,
   }
 
   .promo__image {
-    width: 324px;
+    width: 48%;
     margin-top: 10px;
     margin-left: 0;
-  }
-
-  .promo__image img {
-    min-width: 324px;
   }
 
   .advantages {
     min-height: 588px;
     padding-top: 54px;
-    background-image: url("../../img/advantages-bg-tablet@1x.webp");
+    background-image: url("../img/advantages-bg-tablet@1x.webp");
   }
 
   .advantages__container {
@@ -1595,7 +1590,7 @@ button,
 
   .reservation {
     min-height: 805px;
-    background-image: url("../../img/reservation-bg-tablet@1x.webp");
+    background-image: url("../img/reservation-bg-tablet@1x.webp");
   }
 
   .reservation__container {
@@ -1650,7 +1645,7 @@ button,
 
   .contacts__map iframe {
     height: 335px;
-    background-image: url("../../img/map/map-tablet-1x.webp");
+    background-image: url("../img/map/map-tablet-1x.webp");
   }
 
   .contacts__info {
@@ -1708,19 +1703,19 @@ button,
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
   .header {
-    background-image: url("../../img/header-bg-tablet@2x.webp");
+    background-image: url("../img/header-bg-tablet@2x.webp");
   }
 
   .advantages {
-    background-image: url("../../img/advantages-bg-tablet@2x.webp");
+    background-image: url("../img/advantages-bg-tablet@2x.webp");
   }
 
   .reservation {
-    background-image: url("../../img/reservation-bg-tablet@2x.webp");
+    background-image: url("../img/reservation-bg-tablet@2x.webp");
   }
 
   .contacts__map iframe {
-    background-image: url("../../img/map/map-tablet-2x.webp");
+    background-image: url("../img/map/map-tablet-2x.webp");
   }
 }
 
@@ -1734,12 +1729,12 @@ button,
     margin-bottom: 45px;
   }
 
-  .section__title--high {
+  .title--h1 {
     font-size: 36px;
     line-height: 45px;
   }
 
-  .section__title--medium {
+  .title--h2 {
     font-size: 24px;
     line-height: 34px;
   }
@@ -1752,7 +1747,7 @@ button,
 
   .header {
     min-height: 500px;
-    background-image: url("../../img/header-bg-mobile@1x.webp");
+    background-image: url("../img/header-bg-mobile@1x.webp");
   }
 
   .header__container--hidden {
@@ -1786,7 +1781,7 @@ button,
   }
 
   .header__toggle--open {
-    background-image: url("../../img/svg/icon-open.svg");
+    background-image: url("../img/svg/icon-open.svg");
   }
 
   .header__toggle--close {
@@ -1796,7 +1791,7 @@ button,
     order: 100;
     width: 13px;
     height: 13px;
-    background-image: url("../../img/svg/icon-close.svg");
+    background-image: url("../img/svg/icon-close.svg");
   }
 
   .header__toggle--nojs {
@@ -1884,7 +1879,7 @@ button,
     top: -55px;
     width: 42px;
     height: 22px;
-    background-image: url("../../img/svg/logo-antarctica--nav.svg");
+    background-image: url("../img/svg/logo-antarctica--nav.svg");
   }
 
   .nav__item {
@@ -1922,14 +1917,10 @@ button,
     width: 100%;
   }
 
-  .promo__image img {
-    min-width: 290px;
-  }
-
   .advantages {
     padding-top: 38px;
     padding-bottom: 15px;
-    background-image: url("../../img/advantages-bg-mobile@1x.webp");
+    background-image: url("../img/advantages-bg-mobile@1x.webp");
   }
 
   .advantages__container {
@@ -2009,7 +2000,7 @@ button,
   .reservation {
     min-height: 760px;
     margin-bottom: 40px;
-    background-image: url("../../img/reservation-bg-mobile@1x.webp");
+    background-image: url("../img/reservation-bg-mobile@1x.webp");
   }
 
   .reservation__container {
@@ -2096,7 +2087,7 @@ button,
 
   .contacts__map iframe {
     height: 316px;
-    background-image: url("../../img/map/map-mobile-1x.webp");
+    background-image: url("../img/map/map-mobile-1x.webp");
   }
 
   .contacts__info {
@@ -2154,24 +2145,24 @@ button,
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .header {
-    background-image: url("../../img/header-bg-mobile@2x.webp");
+    background-image: url("../img/header-bg-mobile@2x.webp");
   }
 
   .advantages {
-    background-image: url("../../img/advantages-bg-mobile@2x.webp");
+    background-image: url("../img/advantages-bg-mobile@2x.webp");
   }
 
   .reservation {
-    background-image: url("../../img/reservation-bg-mobile@2x.webp");
+    background-image: url("../img/reservation-bg-mobile@2x.webp");
   }
 
   .contacts__map iframe {
-    background-image: url("../../img/map/map-mobile-2x.webp");
+    background-image: url("../img/map/map-mobile-2x.webp");
   }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .contacts__map iframe {
-    background-image: url("../../img/map/map-desktop-2x.webp");
+    background-image: url("../img/map/map-desktop-2x.webp");
   }
 }
