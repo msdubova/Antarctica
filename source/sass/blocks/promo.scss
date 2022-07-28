@@ -69,5 +69,14 @@
 
 .promo__image img {
   width: 100%;
+  object-fit: cover;
   height: auto;
+
+  @include vp-1023 {
+    height: 264px;
+  }
+
+  @include vp-767 {
+    height: auto;
+  }
 }

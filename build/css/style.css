@@ -616,7 +616,7 @@ button,
   margin-bottom: 85px;
 }
 
-.title--h1 {
+.section__title-high {
   font-weight: 700;
   font-size: 54px;
   line-height: 66px;
@@ -624,7 +624,7 @@ button,
   letter-spacing: 0;
 }
 
-.title--h2 {
+.section__title-medium {
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
@@ -632,7 +632,7 @@ button,
   letter-spacing: 0;
 }
 
-.title--h3 {
+.section__title-low {
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -817,6 +817,8 @@ button,
 
 .promo__image img {
   width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
   height: auto;
 }
 
@@ -1434,12 +1436,12 @@ button,
     margin-bottom: 65px;
   }
 
-  .title--h1 {
+  .section__title-high {
     font-size: 50px;
     line-height: 61px;
   }
 
-  .title--h2 {
+  .section__title-medium {
     font-size: 26px;
     line-height: 36px;
   }
@@ -1510,6 +1512,10 @@ button,
     width: 48%;
     margin-top: 10px;
     margin-left: 0;
+  }
+
+  .promo__image img {
+    height: 264px;
   }
 
   .advantages {
@@ -1729,12 +1735,12 @@ button,
     margin-bottom: 45px;
   }
 
-  .title--h1 {
+  .section__title-high {
     font-size: 36px;
     line-height: 45px;
   }
 
-  .title--h2 {
+  .section__title-medium {
     font-size: 24px;
     line-height: 34px;
   }
@@ -1915,6 +1921,10 @@ button,
 
   .promo__image {
     width: 100%;
+  }
+
+  .promo__image img {
+    height: auto;
   }
 
   .advantages {
