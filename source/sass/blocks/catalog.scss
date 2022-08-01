@@ -139,7 +139,8 @@
 
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:focus-within {
     padding: 30px 25px 35px 25px;
 
     background-color: $color-bg-primary;
@@ -153,6 +154,7 @@
     }
   }
 }
+
 
 .catalog__item img {
   position: absolute;
@@ -231,5 +233,14 @@
 
 .catalog__item:hover .catalog__description,
 .catalog__item:focus .catalog__description {
+  display: flex;
+}
+
+
+.catalog__item:focus-within .catalog__picture {
+  display: none;
+}
+
+.catalog__item:focus-within .catalog__description {
   display: flex;
 }
