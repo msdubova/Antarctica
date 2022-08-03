@@ -691,6 +691,8 @@ button,
 .page a:hover,
 .page input:hover,
 .page button:hover {
+  outline: auto;
+  outline-color: #80eeff;
   opacity: 0.8;
 }
 
@@ -942,7 +944,7 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 100%;
+  width: 1140px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -967,6 +969,10 @@ button,
   padding: 20px 30px;
   color: #f9fbfd;
   background-color: #446494;
+}
+
+.catalog__item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .catalog__item:hover,
@@ -1276,7 +1282,7 @@ button,
 .contacts__info {
   width: 43%;
   margin-top: 58px;
-  margin-left: auto;
+  margin-left: 100px;
 }
 
 .contacts__info h3 {
@@ -1284,6 +1290,7 @@ button,
 }
 
 .contacts__item {
+  display: block;
   position: relative;
   padding-left: 28px;
   font-weight: 400;
@@ -1316,7 +1323,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 50px 93px 50px 103px;
+  padding: 40px 93px 30px 103px;
 }
 
 .footer__logo {
@@ -1329,9 +1336,14 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  width: 70%;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.nav-footer__item {
+  padding: 20px 0;
 }
 
 .nav-footer__item a {
@@ -1340,6 +1352,7 @@ button,
   font-size: 16px;
   line-height: 20px;
   color: #f9fbfd;
+  padding: 20px 0;
 }
 
 .socials {
@@ -1437,20 +1450,16 @@ button,
     -ms-flex-pack: start;
     justify-content: flex-start;
   }
-
-  .catalog__item:nth-child(4n) {
-    margin-right: 0;
-  }
 }
 
 @media (max-width: 1365px) {
   .catalog__list {
-    max-width: 840px;
+    width: 840px;
     margin: 0 auto;
   }
 
-  .catalog__item {
-    margin-right: 0.5%;
+  .catalog__item:nth-child(4n) {
+    margin-right: 30px;
   }
 
   .catalog__item:nth-child(3n) {
@@ -1475,13 +1484,6 @@ button,
   .section__title-medium {
     font-size: 26px;
     line-height: 36px;
-  }
-
-  .page a:hover,
-  .page input:hover,
-  .page button:hover {
-    outline: auto;
-    outline-color: #80eeff;
   }
 
   .header {
@@ -1702,6 +1704,7 @@ button,
   .contacts__info {
     width: 48%;
     margin-top: 48px;
+    margin-left: auto;
   }
 
   .contacts__info h3 {
@@ -1713,7 +1716,6 @@ button,
   }
 
   .footer__container {
-    padding-top: 50px 45px;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
@@ -1724,13 +1726,16 @@ button,
     padding-top: 20px;
   }
 
+  .nav-footer {
+    width: auto;
+  }
+
   .nav-footer__item {
     padding: 20px 0;
   }
 
   .nav-footer__item a {
     margin-right: 23px;
-    padding: 20px 0;
     font-size: 12px;
     line-height: 15px;
   }
@@ -2051,7 +2056,11 @@ button,
     margin-right: 0;
   }
 
-  .catalog__item:nth-child(6) {
+  .catalog__item:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  .catalog__item:nth-child(6n) {
     margin-right: 0;
   }
 
@@ -2157,7 +2166,7 @@ button,
   .contacts__info {
     width: 100%;
     margin-top: 0;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
   }
 
   .footer__container {

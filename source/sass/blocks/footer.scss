@@ -6,10 +6,9 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 50px 93px 50px 103px;
+  padding: 40px 93px 30px 103px;
 
   @include vp-1023 {
-    padding-top: 50px 45px;
     align-items: flex-start;
   }
 

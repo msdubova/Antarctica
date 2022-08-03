@@ -44,7 +44,7 @@
 .catalog__list {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: 1140px;
 
   @include reset-ul();
 
@@ -53,7 +53,7 @@
   }
 
   @include vp-1365 {
-    max-width: 840px;
+    width: 840px;
     margin: 0 auto;
   }
 
@@ -85,14 +85,14 @@
 
   background-color: $color-bg-catalog-item;
 
-  @include vp-1366 {
-    &:nth-child(4n) {
-      margin-right: 0;
-    }
+  &:nth-child(4n) {
+    margin-right: 0;
   }
 
   @include vp-1365 {
-    margin-right: 0.5%;
+    &:nth-child(4n) {
+      margin-right: 30px;
+    }
 
     &:nth-child(3n) {
       margin-right: 0;
@@ -131,7 +131,11 @@
       margin-right: 0;
     }
 
-    &:nth-child(6) {
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+
+    &:nth-child(6n) {
       margin-right: 0;
     }
   }

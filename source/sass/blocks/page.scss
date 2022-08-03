@@ -17,15 +17,12 @@
 .page input,
 .page button {
   &:hover {
+    outline: auto;
+    outline-color: $color-outline;
     opacity: 0.8;
 
     @include vp-767 {
       outline: none;
-    }
-
-    @include vp-1023 {
-      outline: auto;
-      outline-color: $color-outline;
     }
   }
 
