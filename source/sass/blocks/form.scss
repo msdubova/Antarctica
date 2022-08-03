@@ -5,6 +5,11 @@
 
   background-color: $color-bg-primary;
   border: none;
+  margin-left: 20px;
+
+  @include vp-1023 {
+    margin-left: 0;
+  }
 
   @include vp-767 {
     padding: 35px 28px 33px 28px;

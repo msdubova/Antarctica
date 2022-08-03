@@ -7,7 +7,7 @@
 .promo__container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 
   @include vp-1023 {
     align-items: flex-start;
@@ -22,6 +22,11 @@
 
 .promo__info {
   width: 48%;
+  padding-top: 40px;
+
+  @include vp-1023 {
+    padding-top: 0;
+  }
 
   @include vp-767 {
     width: 100%;
