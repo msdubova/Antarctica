@@ -10,6 +10,7 @@
 
   @include vp-1023 {
     padding-top: 50px 45px;
+    align-items: flex-start;
   }
 
   @include vp-767 {
@@ -22,11 +23,14 @@
 .footer__logo {
   margin-right: 40px;
 
+
   @include vp-1023 {
     margin-right: 25px;
+    padding-top: 20px;
   }
 
   @include vp-767 {
+    padding-top: 0;
     margin-right: 0;
     margin-bottom: 18px;
   }
