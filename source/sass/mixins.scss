@@ -13,7 +13,7 @@
 }
 
 @mixin vp-1365 {
-  @media (max-width: $vp-1365) {
+  @media (max-width: $vp-1366 - 1) {
     @content;
   }
 }
